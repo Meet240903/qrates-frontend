@@ -4,6 +4,7 @@ import headerLogo from '../assets/images/headerLogo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faSearch, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -16,11 +17,13 @@ const Header = () => {
         <>
             <div className='header-section-container'>
                 <div className='header-section-container-left-content'>
-                    <img src={headerLogo} className='img-fluid' alt='header-logo' />
+                    <Link to='/'>
+                        <img src={headerLogo} className='img-fluid' alt='header-logo' />
+                    </Link>
                     <nav className={`header-nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
-                        <a href='#' onClick={toggleMobileMenu}>discover music</a>
-                        <a href='#' onClick={toggleMobileMenu}>for artists</a>
-                        <a href='#' onClick={toggleMobileMenu}>for fans</a>
+                        <a href='#' onClick={()=>setIsMobileMenuOpen(false)}>discover music</a>
+                        <a href='#' onClick={()=>setIsMobileMenuOpen(false)}>for artists</a>
+                        <a href='#' onClick={()=>setIsMobileMenuOpen(false)}>for fans</a>
                         <div className={`${isMobileMenuOpen ? 'header-mobile-social-icons' : 'd-none'}`}>
                             <FontAwesomeIcon icon={faFacebook} className='header-social-icon' />
                             <FontAwesomeIcon icon={faInstagram} className='header-social-icon' />
