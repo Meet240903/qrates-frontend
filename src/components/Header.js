@@ -17,7 +17,7 @@ const Header = () => {
         <>
             <div className='header-section-container'>
                 <div className='header-section-container-left-content'>
-                    <Link to='/'>
+                    <Link to='/' onClick={()=>setIsMobileMenuOpen(false)}>
                         <img src={headerLogo} className='img-fluid' alt='header-logo' />
                     </Link>
                     <nav className={`header-nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
