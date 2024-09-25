@@ -3,6 +3,7 @@ import '../assets/css/footer.css'
 import footerLogo from '../assets/images/footerLogo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     const footerData = [
@@ -96,7 +97,9 @@ const Footer = () => {
                 </div>
                 <div className='footer-bottom-section-container'>
                     <div className='footer-bottom-section-img'>
-                        <img src={footerLogo} className='img-fluid' alt='footer-logo' />
+                        <Link to='/'>
+                            <img src={footerLogo} className='img-fluid' alt='footer-logo' />
+                        </Link>
                     </div>
                     <div className='footer-bottom-section-right-content'>
                         <button>English</button>

@@ -1,0 +1,76 @@
+.for-artists-page-bottom-section-container {
+  padding: 4rem;
+}
+
+.for-artists-page-bottom-section-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.for-artists-page-bottom-section-left-content-title {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 5px 20px;
+  width: fit-content;
+}
+
+.for-artists-page-bottom-section-left-content-title span {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.for-artists-page-bottom-section-left-inner-content {
+  height: 200px;
+}
+
+.for-artists-page-bottom-section-left-content p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.for-artists-page-bottom-section-left-content-pagination {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.for-artists-page-bottom-section-left-content-pagination button {
+  border: 2px solid #000;
+  color: #000;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 8px 15px;
+}
+
+.for-artists-page-bottom-section-right-content img {
+  height: 875px;
+  border: 2px solid #000;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .for-artists-page-bottom-section-container {
+    padding: 1rem 0.5rem;
+  }
+  .for-artists-page-bottom-section-content {
+    flex-direction: column-reverse;
+  }
+  .for-artists-page-bottom-section-right-content img {
+    height: 535px;
+    width: 100%;
+  }
+  .for-artists-page-bottom-section-left-content {
+    margin: 2rem 0 !important;
+  }
+  .for-artists-page-bottom-section-left-inner-content {
+    height: 250px;
+  }
+  .for-artists-page-bottom-section-left-inner-content p {
+    font-size: 18px;
+    text-align: justify;
+    margin: 1rem 0;
+  }
+}

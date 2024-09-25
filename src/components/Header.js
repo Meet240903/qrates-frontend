@@ -22,7 +22,7 @@ const Header = () => {
                     </Link>
                     <nav className={`header-nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
                         <a href='#' onClick={()=>setIsMobileMenuOpen(false)}>discover music</a>
-                        <a href='#' onClick={()=>setIsMobileMenuOpen(false)}>for artists</a>
+                        <Link to='/for-artists' onClick={()=>setIsMobileMenuOpen(false)}>for artists</Link>
                         <a href='#' onClick={()=>setIsMobileMenuOpen(false)}>for fans</a>
                         <div className={`${isMobileMenuOpen ? 'header-mobile-social-icons' : 'd-none'}`}>
                             <FontAwesomeIcon icon={faFacebook} className='header-social-icon' />
