@@ -97,7 +97,7 @@ const Footer = () => {
                 </div>
                 <div className='footer-bottom-section-container'>
                     <div className='footer-bottom-section-img'>
-                        <Link to='/'>
+                        <Link to='/' target='_top'>
                             <img src={footerLogo} className='img-fluid' alt='footer-logo' />
                         </Link>
                     </div>

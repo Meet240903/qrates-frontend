@@ -17,7 +17,11 @@ const HomePageTopSection = () => {
                         </h1>
                         <p>We make it easy for artists to make vinyl and cassettes, so fans can keep pieces of the music they love ↓</p>
                         <div className='home-page-top-section-left-content-buttons'>
-                            <button className='home-page-top-section-left-content-for-fans-button'>for fans</button>
+                            <button className='home-page-top-section-left-content-for-fans-button'>
+                                <Link to='/for-fans' style={{color:'#000',textDecoration:'none'}}>
+                                    for fans
+                                </Link>
+                            </button>
                             <button className='home-page-top-section-left-content-for-artists-button'>
                                 <Link to='/for-artists' className='button-router-link'>
                                     for artists

@@ -4,6 +4,9 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import ForArtists from "./components/ForArtists";
 import ForFans from "./components/ForFans";
+import RecordsPage from "./components/RecordsPage";
+import CassatesPage from "./components/CassatesPage";
+import StoriesPage from "./components/StoriesPage";
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
           <Route exact path='/' element={<Home />} />
           <Route exact path='/for-artists' element={<ForArtists />} />
           <Route exact path='/for-fans' element={<ForFans />} />
+          <Route exact path='/records' element={<RecordsPage />} />
+          <Route exact path='/cassates' element={<CassatesPage />} />
+          <Route exact path='/stories' element={<StoriesPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

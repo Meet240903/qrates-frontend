@@ -26,15 +26,15 @@ const Header = () => {
                     <nav className={`header-nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
                         <a href='#' className='header-discover-music-link' onClick={() => setShowDiscoverMusicSubmenu(!showDiscoverMusicSubmenu)}>
                             discover music
-                            <span style={{transform: showDiscoverMusicSubmenu ? 'rotate(-90deg)' : ''}}>&#9662;</span>
+                            <span style={{transform: showDiscoverMusicSubmenu ? 'rotate(-180deg)' : ''}}>&#9662;</span>
                         </a>
                         {
                             showDiscoverMusicSubmenu && <div className='header-discover-music-submenu'>
                                 {
                                     headerDiscoverMusicDropDownData?.map((data, index) => (
-                                        <div key={index}>
+                                        <Link to={`/${data?.slugs}`} key={index} onClick={()=>setShowDiscoverMusicSubmenu(false)} style={{color:'#fff',textTransform:'capitalize'}}>
                                             <li>{data?.listTitle}</li>
-                                        </div>
+                                        </Link>
                                     ))
                                 }
                             </div>
