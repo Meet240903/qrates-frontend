@@ -2,6 +2,7 @@ import React from 'react';
 import '../../assets/css/homePageSectionCSS/homePageTopSection.css';
 import sectionImg1 from '../../assets/images/homePageImgs/topSectionImgs/sectionImg1.avif';
 import sectionImg2 from '../../assets/images/homePageImgs/topSectionImgs/sectionImg2.png';
+import { Link } from 'react-router-dom';
 
 const HomePageTopSection = () => {
     return (
@@ -17,7 +18,11 @@ const HomePageTopSection = () => {
                         <p>We make it easy for artists to make vinyl and cassettes, so fans can keep pieces of the music they love ↓</p>
                         <div className='home-page-top-section-left-content-buttons'>
                             <button className='home-page-top-section-left-content-for-fans-button'>for fans</button>
-                            <button className='home-page-top-section-left-content-for-artists-button'>for artists</button>
+                            <button className='home-page-top-section-left-content-for-artists-button'>
+                                <Link to='/for-artists' className='button-router-link'>
+                                    for artists
+                                </Link>
+                            </button>
                         </div>
                     </div>
                     <div className='col-md-6 home-page-top-section-right-content'>
