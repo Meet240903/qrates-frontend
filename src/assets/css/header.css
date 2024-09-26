@@ -62,6 +62,33 @@
   color: #000;
 }
 
+/* discover music submenu */
+.header-discover-music-submenu{
+  position: absolute;
+  top: 60px;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  z-index: 999;
+}
+
+.header-discover-music-submenu li{
+  list-style-type: none;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2.2rem;
+}
+
+.header-discover-music-link{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.header-discover-music-link span{
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .header-section-container {
@@ -135,5 +162,12 @@
   }
   .header-social-icon{
     font-size: 30px;
+  }
+  .header-discover-music-link{
+    transition: 0.5s ease-in-out;
+  }
+  .header-discover-music-submenu{
+    position: relative;
+    top: 0;
   }
 }
