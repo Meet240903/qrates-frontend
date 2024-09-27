@@ -12,15 +12,19 @@ const Footer = () => {
             contentData: [
                 {
                     content: "For Artists",
+                    slugs: 'for-artists'
                 },
                 {
                     content: "How it Works",
+                    slugs: 'how-it-works'
                 },
                 {
                     content: "Artist Toolkit",
+                    slugs: 'articles'
                 },
                 {
                     content: "Referral Program",
+                    slugs: ''
                 },
             ]
         },
@@ -29,18 +33,23 @@ const Footer = () => {
             contentData: [
                 {
                     content: "For Fans",
+                    slugs: 'for-fans'
                 },
                 {
                     content: "Records",
+                    slugs: 'records'
                 },
                 {
                     content: "Cassettes",
+                    slugs: 'cassates'
                 },
                 {
                     content: "Stories",
+                    slugs: 'stories'
                 },
                 {
                     content: "Qrates Curated",
+                    slugs: 'qrates-curated'
                 },
             ]
         },
@@ -87,7 +96,7 @@ const Footer = () => {
                                 {
                                     data?.contentData?.map((data, index) => (
                                         <div key={index}>
-                                            <a href='#'>{data?.content}</a>
+                                            <Link to={`/${data?.slugs}`} target='_top'>{data?.content}</Link>
                                         </div>
                                     ))
                                 }

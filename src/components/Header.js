@@ -58,7 +58,7 @@ const Header = () => {
                     </button>
                 </div>
                 <div className='header-section-container-right-content'>
-                    <a href='#' onClick={() => setShowDiscoverMusicSubmenu(false)}>login</a>
+                    <Link to='/sign-in' onClick={() => setShowDiscoverMusicSubmenu(false)}>login</Link>
                     <button onClick={() => setShowDiscoverMusicSubmenu(false)}>make your own</button>
                 </div>
             </div>

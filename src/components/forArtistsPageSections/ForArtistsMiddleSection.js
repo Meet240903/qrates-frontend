@@ -6,6 +6,7 @@ import sectionImg3 from '../../assets/images/forArtistsPageImgs/middleSectionImg
 import sectionImg4 from '../../assets/images/forArtistsPageImgs/middleSectionImgs/sectionImg4.avif'
 import sectionImg5 from '../../assets/images/forArtistsPageImgs/middleSectionImgs/sectionImg5.avif'
 import sectionImg6 from '../../assets/images/forArtistsPageImgs/middleSectionImgs/sectionImg6.avif'
+import { Link } from 'react-router-dom'
 
 const ForArtistsMiddleSection = () => {
     const sectionData = [
@@ -231,12 +232,14 @@ const ForArtistsMiddleSection = () => {
                                 }
                                 {
                                     data?.rightSectionData?.button && <div className='for-artist-middle-section-button'>
-                                        <button>how it works</button>
+                                        <Link to='/how-it-works' target='_top'>
+                                            <button>how it works</button>
+                                        </Link>
                                     </div>
                                 }
                             </div>
                             <div className='for-artists-page-middle-section-content-index'>
-                                <h1>{index+1}</h1>
+                                <h1>{index + 1}</h1>
                             </div>
                         </div>
                     ))

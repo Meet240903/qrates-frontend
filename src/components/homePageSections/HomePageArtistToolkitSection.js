@@ -6,28 +6,34 @@ import bgImg2 from '../../assets/images/homePageImgs/artistToolkitSectionImgs/se
 import bgImg3 from '../../assets/images/homePageImgs/artistToolkitSectionImgs/sectionBgImg3.avif'
 import bgImg4 from '../../assets/images/homePageImgs/artistToolkitSectionImgs/sectionBgImg4.avif'
 import bgImg5 from '../../assets/images/homePageImgs/artistToolkitSectionImgs/sectionBgImg5.avif'
+import { Link } from 'react-router-dom'
 
 const HomePageArtistToolkitSection = () => {
     const sectionData = [
         {
             title: "Vinyl Knowledge",
             bgImg: bgImg1,
+            slugs: 1
         },
         {
             title: "Distribution & Promotion",
             bgImg: bgImg2,
+            slugs: 4
         },
         {
             title: "Mixing & Mastering",
             bgImg: bgImg3,
+            slugs: 3
         },
         {
             title: "Inspiration",
             bgImg: bgImg4,
+            slugs: 2
         },
         {
             title: "Qrates Tips",
             bgImg: bgImg5,
+            slugs: 5
         },
     ]
 
@@ -46,7 +52,9 @@ const HomePageArtistToolkitSection = () => {
                     {
                         sectionData?.map((data, index) => (
                             <div key={index}>
-                                <h1 onMouseEnter={() => setSectionBgImg(data?.bgImg)} onMouseLeave={() => setSectionBgImg(defaultBgImg)}>{data?.title}</h1>
+                                <Link to='/articles' style={{ color: '#fff', textDecoration: 'none' }} target='_top'>
+                                    <h1 onMouseEnter={() => setSectionBgImg(data?.bgImg)} onMouseLeave={() => setSectionBgImg(defaultBgImg)}>{data?.title}</h1>
+                                </Link>
                             </div>
                         ))
                     }

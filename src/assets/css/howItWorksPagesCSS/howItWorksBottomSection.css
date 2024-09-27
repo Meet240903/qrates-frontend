@@ -1,0 +1,77 @@
+.how-it-works-page-bottom-section-title-header {
+  background-color: #000;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: sticky;
+  top: 0;
+}
+
+.how-it-works-page-bottom-section-title-header h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.how-it-works-page-community-connection-section-content {
+  padding: 4rem;
+}
+
+.how-it-works-page-community-connection-section-left-content-title {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 5px 20px;
+  width: fit-content;
+  margin-bottom: 2rem;
+}
+
+.how-it-works-page-community-connection-section-left-content-title span {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.how-it-works-page-community-connection-section-left-content-body {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 20px;
+}
+
+.how-it-works-page-community-connection-section-left-content-body h1 {
+  font-weight: bold;
+}
+
+.how-it-works-page-community-connection-section-left-content-body p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .how-it-works-page-bottom-section-title-header {
+    overflow-x: auto;
+    padding: 2rem;
+    justify-content: flex-start;
+  }
+  .how-it-works-page-bottom-section-title-header h3 {
+    white-space: nowrap;
+  }
+  .how-it-works-page-community-connection-section-content {
+    padding: 2rem 0;
+    flex-direction: column-reverse !important;
+  }
+  .how-it-works-page-community-connection-section-left-content-body p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .how-it-works-page-community-connection-section-left-content {
+    margin-top: 2rem !important;
+  }
+}
