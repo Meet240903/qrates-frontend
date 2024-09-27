@@ -41,7 +41,7 @@ const QratesCuratedLatestStoriesSection = () => {
                     {/* Left and Right Arrow Icons */}
                     <FontAwesomeIcon icon={faArrowLeft} className='fw-bold' onClick={scrollLeft} style={{ cursor: 'pointer' }} />
                     <FontAwesomeIcon icon={faArrowRight} className='fw-bold' onClick={scrollRight} style={{ cursor: 'pointer' }} />
-                    <Link to='/stories'>
+                    <Link to='/stories' target='_top'>
                         <button>browse all</button>
                     </Link>
                 </div>

@@ -17,6 +17,7 @@ import sectionImg16 from '../assets/images/recordsProjectImgs/sectionImg16.jpeg'
 import sectionImg17 from '../assets/images/recordsProjectImgs/sectionImg17.png'
 import sectionImg18 from '../assets/images/recordsProjectImgs/sectionImg18.png'
 import sectionImg19 from '../assets/images/recordsProjectImgs/sectionImg19.png'
+import sectionImg20 from '../assets/images/recordsProjectImgs/sectionImg20.png'
 
 const recordsPageProjectsData = [
     {
@@ -275,6 +276,21 @@ const recordsPageProjectsData = [
         projectPrice: 24.99,
         moneyType: "€",
         footerContent: "pre-order" 
+    },
+    {
+        sectionImg: sectionImg20,
+        slugs: 'record-project-20',
+        projectTitle: "What A Wonderful World",
+        projectContent: "The Brooklyn-based classically-trained pianist follows up a year of touring solo with an album of soul, jump blues, and swing songs that share what he'd learnt on the journey. That is, that the best way to connect with an audience is with nothing more than his instrument and a mic.",
+        artistTitle: "Jake Sherman",
+        genreData: [
+            {genreList: "Jazz"},
+            {genreList: "Indie"},
+            {genreList: "Pop"},
+        ],
+        projectPrice: 24.99,
+        moneyType: "€",
+        footerContent: "pre-order"
     },
 ]
 
