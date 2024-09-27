@@ -13,6 +13,7 @@ const headerDiscoverMusicDropDownData = [
     },
     {
         listTitle: "Qrates Curated",
+        slugs: 'qrates-curated'
     },
 ]
 

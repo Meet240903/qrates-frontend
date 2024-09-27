@@ -1,0 +1,94 @@
+.qrates-curated-page-top-section-container {
+  padding: 2rem;
+}
+
+.qrates-curated-page-top-section-left-content,
+.qrates-curated-page-top-section-right-content {
+  height: 690px;
+  background-color: #fff;
+  border: 2px solid #000;
+}
+
+.qrates-curated-page-top-section-right-content {
+  border-left: none;
+  padding: 1rem 2rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.qrates-curated-page-top-section-left-content {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.qrates-curated-page-top-section-left-content img {
+  width: 100%;
+  height: 100%;
+}
+
+.qrates-curated-page-top-section-right-content-body-title {
+  width: fit-content;
+  padding: 3px 15px;
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  margin: 1rem 0;
+}
+
+.qrates-curated-page-top-section-right-content-body-title span {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.qrates-curated-page-top-section-right-content-body h3 {
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.qrates-curated-page-top-section-right-content-body h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.qrates-curated-page-top-section-right-content-body p {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.qrates-curated-page-top-section-right-content a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .qrates-curated-page-top-section-container {
+    padding: 2rem 0.6rem;
+  }
+  .qrates-curated-page-top-section-right-content {
+    border-left: 2px solid #000;
+    padding: 10px !important;
+    justify-content: start;
+  }
+  .qrates-curated-page-top-section-left-content{
+    height: 400px;
+  }
+  .qrates-curated-page-top-section-right-content{
+    height: fit-content;
+  }
+  .qrates-curated-page-top-section-right-content-body h1{
+    font-size: 34px;
+  }
+  .qrates-curated-page-top-section-right-content-body p{
+    font-size: 20px;
+  }
+}

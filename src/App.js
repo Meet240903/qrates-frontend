@@ -7,6 +7,7 @@ import ForFans from "./components/ForFans";
 import RecordsPage from "./components/RecordsPage";
 import CassatesPage from "./components/CassatesPage";
 import StoriesPage from "./components/StoriesPage";
+import QratesCuratedPage from "./components/QratesCuratedPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path='/records' element={<RecordsPage />} />
           <Route exact path='/cassates' element={<CassatesPage />} />
           <Route exact path='/stories' element={<StoriesPage />} />
+          <Route exact path='/qrates-curated' element={<QratesCuratedPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
