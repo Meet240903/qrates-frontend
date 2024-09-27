@@ -1,0 +1,69 @@
+.articles-page-section-container {
+  background-color: #ff6711;
+  padding: 4rem 0 1rem 0;
+  text-align: center;
+}
+
+.articles-page-section-title-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  color: #fff;
+}
+
+.articles-page-section-title {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.articles-page-section-title h1 {
+  font-size: 65px;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+
+.articles-page-section-title p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.articles-page-section-title-links h4 {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.articles-page-section-title-links h4:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .articles-page-section-container {
+    padding: 2rem 1rem;
+  }
+  .articles-page-section-title-links {
+    justify-content: flex-start; /* Align items to start */
+    gap: 30px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;
+    margin-top: 2rem;
+  }
+  .articles-page-section-title-links::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+  .articles-page-section-title-links h4 {
+    font-size: 18px;
+  }
+  .articles-page-section-title h1 {
+    font-size: 55px;
+  }
+  .articles-page-section-title p {
+    text-align: justify;
+  }
+}

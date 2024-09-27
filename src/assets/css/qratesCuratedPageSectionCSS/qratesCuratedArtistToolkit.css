@@ -48,18 +48,40 @@
   font-weight: bold;
 }
 
-.qrates-curated-page-artist-toolkit-section-right-content-body h2{
-    font-size: 40px;
-    margin: 1rem 0;
+.qrates-curated-page-artist-toolkit-section-right-content-body h2 {
+  font-size: 40px;
+  margin: 1rem 0;
 }
 
-.qrates-curated-page-artist-toolkit-section-right-content-body p{
-    font-size: 22px;
-    font-weight: 600;
+.qrates-curated-page-artist-toolkit-section-right-content-body p {
+  font-size: 22px;
+  font-weight: 600;
 }
 
-.qrates-curated-page-artist-toolkit-section-right-content a{
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
+.qrates-curated-page-artist-toolkit-section-right-content a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .qrates-curated-page-artist-toolkit-section-container {
+    padding: 2rem 0.6rem;
+  }
+  .qrates-curated-page-artist-toolkit-section-title h3 {
+    font-size: 30px;
+  }
+  .qrates-curated-page-artist-toolkit-section-left-content {
+    height: 300px;
+  }
+  .qrates-curated-page-artist-toolkit-section-right-content {
+    padding: 20px !important;
+  }
+  .qrates-curated-page-artist-toolkit-section-right-content-body h2 {
+    font-size: 30px;
+  }
+  .qrates-curated-page-artist-toolkit-section-right-content-body p {
+    font-size: 18px;
+    text-align: justify;
+  }
 }

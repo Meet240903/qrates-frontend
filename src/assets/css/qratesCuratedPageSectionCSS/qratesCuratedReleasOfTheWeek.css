@@ -92,14 +92,17 @@
   .qrates-curated-page-releas-of-the-week-section-right-content {
     padding: 1rem 0.5rem;
   }
-  .qrates-curated-page-releas-of-the-week-section-right-content h3{
+  .qrates-curated-page-releas-of-the-week-section-right-content h3 {
     font-size: 28px;
   }
-  .qrates-curated-page-releas-of-the-week-section-right-content h5{
+  .qrates-curated-page-releas-of-the-week-section-right-content h5 {
     font-size: 22px;
   }
-  .qrates-curated-page-releas-of-the-week-section-right-content p{
+  .qrates-curated-page-releas-of-the-week-section-right-content p {
     text-align: justify;
     font-size: 16px;
+  }
+  .qrates-curated-page-releas-of-the-week-section-content {
+    margin: 2rem 0 !important;
   }
 }

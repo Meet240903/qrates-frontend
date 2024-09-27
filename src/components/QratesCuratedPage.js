@@ -3,6 +3,7 @@ import QratesCuratedTopSection from './qratesCuratedPages/QratesCuratedTopSectio
 import QratesCuratedLatestStoriesSection from './qratesCuratedPages/QratesCuratedLatestStoriesSection'
 import QratesCuratedReleasOfTheWeek from './qratesCuratedPages/QratesCuratedReleasOfTheWeek'
 import QratesCuratedArtistToolkit from './qratesCuratedPages/QratesCuratedArtistToolkit'
+import QratesCuratedLatestArticles from './qratesCuratedPages/QratesCuratedLatestArticles'
 
 const QratesCuratedPage = () => {
     return (
@@ -12,6 +13,7 @@ const QratesCuratedPage = () => {
                 <QratesCuratedLatestStoriesSection />
                 <QratesCuratedReleasOfTheWeek />
                 <QratesCuratedArtistToolkit />
+                <QratesCuratedLatestArticles />
             </div>
         </>
     )

@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const QratesCuratedArtistToolkit = () => {
-    const selectedArticleData = articlesPageData[0];
+    const selectedArticleData = articlesPageData[18];
     return (
         <>
             <div className='qrates-curated-page-artist-toolkit-section-container'>

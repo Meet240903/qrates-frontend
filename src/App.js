@@ -8,6 +8,7 @@ import RecordsPage from "./components/RecordsPage";
 import CassatesPage from "./components/CassatesPage";
 import StoriesPage from "./components/StoriesPage";
 import QratesCuratedPage from "./components/QratesCuratedPage";
+import ArticlesPage from "./components/ArticlesPage";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path='/cassates' element={<CassatesPage />} />
           <Route exact path='/stories' element={<StoriesPage />} />
           <Route exact path='/qrates-curated' element={<QratesCuratedPage />} />
+          <Route exact path='/articles' element={<ArticlesPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>
