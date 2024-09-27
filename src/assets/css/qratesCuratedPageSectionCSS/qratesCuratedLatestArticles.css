@@ -50,6 +50,7 @@
   border: 2px solid #000;
   background-color: #000;
   color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .qrates-curated-page-latest-articles-section-content-boxs-img {
@@ -103,7 +104,7 @@
   .qrates-curated-page-latest-articles-section-content-boxs {
     width: 400px;
   }
-  .qrates-curated-page-latest-articles-section-content-boxs-body{
+  .qrates-curated-page-latest-articles-section-content-boxs-body {
     overflow: hidden;
   }
   .qrates-curated-page-latest-articles-section-content-boxs-body h2 {

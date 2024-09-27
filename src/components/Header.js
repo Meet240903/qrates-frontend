@@ -32,7 +32,7 @@ const Header = () => {
                             showDiscoverMusicSubmenu && <div className='header-discover-music-submenu'>
                                 {
                                     headerDiscoverMusicDropDownData?.map((data, index) => (
-                                        <Link to={`/${data?.slugs}`} key={index} onClick={()=>setShowDiscoverMusicSubmenu(false)} style={{color:'#fff',textTransform:'capitalize'}}>
+                                        <Link to={`/${data?.slugs}`} key={index} onClick={()=>{setShowDiscoverMusicSubmenu(false);setIsMobileMenuOpen(false)}} style={{color:'#fff',textTransform:'capitalize'}}>
                                             <li>{data?.listTitle}</li>
                                         </Link>
                                     ))
