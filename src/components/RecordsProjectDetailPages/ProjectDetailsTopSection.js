@@ -1,11 +1,9 @@
 import React, { useRef, useState } from 'react';
-import sectionimg from '../../assets/images/projectDetailsImgs/recordsProject1Imgs/sectionImg1.png';
-import sectionAudio from '../../assets/images/projectDetailsImgs/recordsProject1Imgs/sample.mp3';
 import '../../assets/css/recordsProjectDetailsPagesCSS/projectDetailsTopSection.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBackwardFast, faForwardFast, faPause, faPlay } from '@fortawesome/free-solid-svg-icons';
 
-const ProjectDetailsTopSection = () => {
+const ProjectDetailsTopSection = ({ sectionData }) => {
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
@@ -51,40 +49,51 @@ const ProjectDetailsTopSection = () => {
 
     return (
         <>
-            <div className='records-project-details-page-top-section-container'>
-                <img src={sectionimg} className='img-fluid' alt='section-top-img' />
+            <div className='records-project-details-page-top-section-container'
+                style={{
+                    backgroundImage: sectionData?.backgroundImg ?
+                        `url(${sectionData.backgroundImg})` : 'none',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundColor: sectionData?.backgroundColor ? sectionData.backgroundColor : 'none'
+                }}
+            >
+                <img src={sectionData?.sectionImg} className='img-fluid' alt='section-top-img' />
             </div>
-            <div className='records-project-details-page-top-section-audio-container'>
-                <p>Rescue - Chemical Modulation</p>
-                <div className='records-project-details-page-top-section-audio-content'>
-                    <audio
-                        ref={audioRef}
-                        onTimeUpdate={handleProgress}
-                        onLoadedMetadata={handleLoadedMetadata}
-                    >
-                        <source src={sectionAudio} type="audio/mpeg" />
-                    </audio>
-                    <div className="records-project-details-page-top-section-audio-controls">
-                        <FontAwesomeIcon icon={faBackwardFast}
-                            onClick={handlePrev}
-                            className='records-project-details-page-top-section-audio-controls-icons' />
-                        <FontAwesomeIcon icon={isPlaying ? faPause : faPlay}
-                            className='records-project-details-page-top-section-audio-controls-icons'
-                            onClick={handlePlayPause} />
-                        <FontAwesomeIcon icon={faForwardFast}
-                            className='records-project-details-page-top-section-audio-controls-icons'
-                            onClick={handleNext} />
-                    </div>
+            {
+                sectionData?.sectionAudio && <div className='records-project-details-page-top-section-audio-container'>
+                    <p>{sectionData?.audioTrackName}</p>
+                    <div className='records-project-details-page-top-section-audio-content'>
+                        <audio
+                            ref={audioRef}
+                            onTimeUpdate={handleProgress}
+                            onLoadedMetadata={handleLoadedMetadata}
+                        >
+                            <source src={sectionData.sectionAudio} type="audio/mpeg" />
+                        </audio>
+                        <div className="records-project-details-page-top-section-audio-controls">
+                            <FontAwesomeIcon icon={faBackwardFast}
+                                onClick={handlePrev}
+                                className='records-project-details-page-top-section-audio-controls-icons' />
+                            <FontAwesomeIcon icon={isPlaying ? faPause : faPlay}
+                                className='records-project-details-page-top-section-audio-controls-icons'
+                                onClick={handlePlayPause} />
+                            <FontAwesomeIcon icon={faForwardFast}
+                                className='records-project-details-page-top-section-audio-controls-icons'
+                                onClick={handleNext} />
+                        </div>
 
-                    {/* Progress Bar */}
-                    <div className="records-project-details-page-top-section-progress-bar">
-                        <div
-                            className="records-project-details-page-top-section-progress"
-                            style={{ width: `${progress}%` }}
-                        ></div>
+                        {/* Progress Bar */}
+                        <div className="records-project-details-page-top-section-progress-bar">
+                            <div
+                                className="records-project-details-page-top-section-progress"
+                                style={{ width: `${progress}%` }}
+                            ></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            }
         </>
     );
 };

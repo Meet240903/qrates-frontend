@@ -1,6 +1,7 @@
 import React from 'react'
 import recordPageFilterData from '../../data/RecordsPageFilterData'
 import recordsPageProjectsData from '../../data/RecordsPageProjectsData';
+import { Link } from 'react-router-dom';
 
 const RecordsPurchase = ({ filterFill }) => {
     const truncateTitle = (title, maxLength) => {
@@ -36,9 +37,11 @@ const RecordsPurchase = ({ filterFill }) => {
                     {
                         selectedRecordsPageProjectsData?.map((data, index) => (
                             <div className='col-md-4 records-page-project-section-content-box' key={index}>
-                                <div className='records-page-project-section-content-box-img'>
-                                    <img src={data?.sectionImg} className='img-fluid' alt='product-img' />
-                                </div>
+                                <Link to={`/records-project-details/${data?.slugs}`} target='_top'>
+                                    <div className='records-page-project-section-content-box-img'>
+                                        <img src={data?.sectionImg} className='img-fluid' alt='product-img' />
+                                    </div>
+                                </Link>
                                 <div className='records-page-project-section-content-box-body'>
                                     <h1>{truncateTitle(data?.projectTitle, 32)}</h1>
                                     <h2>{data?.artistTitle}</h2>

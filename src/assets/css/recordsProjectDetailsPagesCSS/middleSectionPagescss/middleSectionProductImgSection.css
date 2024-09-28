@@ -8,7 +8,7 @@
 .records-project-details-page-middle-section-left-content-product-imgs-main-image {
     width: 100%; /* Adjust as needed */
     max-width: 600px; /* Adjust as needed */
-    height: auto;
+    height: 400px;
 }
 
 .records-project-details-page-middle-section-left-content-product-imgs-thumbnail-container {
@@ -46,7 +46,10 @@
 @media (max-width:768px) {
     .records-project-details-page-middle-section-left-content-product-imgs-thumbnail{
         height: 40px;
-        width: 50px;
+        width: 40px;
+    }
+    .records-project-details-page-middle-section-left-content-product-imgs-main-image {
+        height: 250px;
     }
     .records-project-details-page-middle-section-left-content-product-imgs-arrow {
         font-size: 18px;

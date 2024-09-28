@@ -4,6 +4,7 @@
 
 .records-project-details-page-middle-section-left-content-profile-section-left-content img{
     height: 200px;
+    border-radius: 50%;
 }
 
 .records-project-details-page-middle-section-left-content-profile-section-right-content h1{

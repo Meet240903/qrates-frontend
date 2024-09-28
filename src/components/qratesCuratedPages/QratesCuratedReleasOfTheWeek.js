@@ -27,7 +27,7 @@ const QratesCuratedReleasOfTheWeek = () => {
                         <h5>{selectedRecordsData?.artistTitle}</h5>
                         <small>[Jazz | Indie | Pop]</small>
                         <p>{selectedRecordsData?.projectContent}</p>
-                        <Link to={`/${selectedRecordsData?.slugs}`}>project detail <FontAwesomeIcon icon={faArrowRight} /></Link>
+                        <Link to={`/records-project-details/${selectedRecordsData?.slugs}`} target='_top'>project detail <FontAwesomeIcon icon={faArrowRight} /></Link>
                     </div>
                 </div>
             </div>

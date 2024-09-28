@@ -9,7 +9,7 @@ import MiddleSectionProductImgsSection from './projectDetailsMiddleSectionPages/
 import MiddleSectionProfileSection from './projectDetailsMiddleSectionPages/MiddleSectionProfileSection'
 import { HashLink as Link } from 'react-router-hash-link'
 
-const ProjectDetailsMiddleSection = () => {
+const ProjectDetailsMiddleSection = ({ sectionData }) => {
     const headerData = [
         {
             title: "about",
@@ -40,7 +40,7 @@ const ProjectDetailsMiddleSection = () => {
                         {
                             headerData?.map((data, index) => (
                                 <div key={index}>
-                                    <Link to={`#${data?.link}`} style={{ color:'#000',textDecoration: 'none' }}>
+                                    <Link to={`#${data?.link}`} style={{ color: '#000', textDecoration: 'none' }}>
                                         <h4>{data?.title}</h4>
                                     </Link>
                                 </div>
@@ -58,13 +58,13 @@ const ProjectDetailsMiddleSection = () => {
                 <div className='row mx-0 records-project-details-page-middle-section-content'>
                     <div className='col-md-8 records-project-details-page-middle-section-left-content'>
                         <div className='records-project-details-page-middle-section-left-content-about-section' id='about-section'>
-                            <MiddleSectionAboutSection />
+                            <MiddleSectionAboutSection sectionData={sectionData?.projectDetailsData?.middleSectionData?.aboutData} />
                         </div>
                         <div className='records-project-details-page-middle-section-left-content-tracks-section' id='tracks-section'>
-                            <MiddleSectionTracklistSection />
+                            <MiddleSectionTracklistSection sectionData={sectionData?.projectDetailsData?.middleSectionData?.tracklistData} />
                         </div>
                         <div className='records-project-details-page-middle-section-left-content-product-imgs-section' id='product-imgs-section'>
-                            <MiddleSectionProductImgsSection />
+                            <MiddleSectionProductImgsSection sectionData={sectionData?.projectDetailsData?.middleSectionData?.productImgs} />
                         </div>
                         <div className='records-project-details-page-middle-section-left-content-comments-section' id='comments-section'>
                             <h1>Comments</h1>
@@ -73,19 +73,20 @@ const ProjectDetailsMiddleSection = () => {
                             </div>
                         </div>
                         <div className='records-project-details-page-middle-section-left-content-profile-section' id='profile-section'>
-                            <MiddleSectionProfileSection />
+                            <MiddleSectionProfileSection sectionData={sectionData?.projectDetailsData?.middleSectionData?.profileSectionData} />
                         </div>
                     </div>
                     <div className='col-md-4 records-project-details-page-middle-section-right-content'>
-                        <h1>Rescue (5.30 A.M. on the Deck of the MPS Noorderzon)</h1>
-                        <h3>Chemical Modulation</h3>
+                        <h1>{sectionData?.projectTitle}</h1>
+                        <h3>{sectionData?.artistTitle}</h3>
                         <div className='records-project-details-page-middle-section-right-content-genre-titles'>
-                            <div className='records-project-details-page-middle-section-right-content-genre-boxs'>
-                                <span>electronics</span>
-                            </div>
-                            <div className='records-project-details-page-middle-section-right-content-genre-boxs'>
-                                <span>techno</span>
-                            </div>
+                            {
+                                sectionData?.genreData?.map((data, index) => (
+                                    <div className='records-project-details-page-middle-section-right-content-genre-boxs' key={index}>
+                                        <span>{data?.genreList}</span>
+                                    </div>
+                                ))
+                            }
                         </div>
                         <div className='records-project-details-page-middle-section-right-content-crowdfunding-section'>
                             <div className='records-project-details-page-middle-section-right-content-crowdfunding-section-content'>
@@ -98,7 +99,7 @@ const ProjectDetailsMiddleSection = () => {
                             </div>
                             <div className='records-project-details-page-middle-section-right-content-crowdfunding-section-content'>
                                 <p>Price</p>
-                                <h4>€15.25</h4>
+                                <h4>{sectionData?.moneyType} {sectionData?.projectPrice}</h4>
                             </div>
                         </div>
                         <div className='records-project-details-page-middle-section-right-content-back-now-button'>

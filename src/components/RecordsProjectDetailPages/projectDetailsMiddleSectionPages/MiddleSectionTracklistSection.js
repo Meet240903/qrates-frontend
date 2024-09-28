@@ -7,37 +7,10 @@ import '../../../assets/css/recordsProjectDetailsPagesCSS/middleSectionPagescss/
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPauseCircle, faPlayCircle } from '@fortawesome/free-solid-svg-icons';
 
-const MiddleSectionTracklistSection = () => {
+const MiddleSectionTracklistSection = ({ sectionData }) => {
     const [activeTrackIndex, setActiveTrackIndex] = useState(null);
     const [progress, setProgress] = useState(0);
     const audioRefs = useRef([]);
-
-    const tracklistData = [
-        {
-            trackTitle: "Eddie Cousin",
-            trackArtist: "King Gizzard & the Lizard Wizard",
-            time: "02:38",
-            trackAudio: sectionAudio1,
-        },
-        {
-            trackTitle: "Good to Me",
-            trackArtist: "King Gizzard & the Lizard Wizard",
-            time: "02:23",
-            trackAudio: sectionAudio2,
-        },
-        {
-            trackTitle: "Fried",
-            trackArtist: "King Gizzard & the Lizard Wizard",
-            time: "03:09",
-            trackAudio: sectionAudio3,
-        },
-        {
-            trackTitle: "Tomb/Beach",
-            trackArtist: "King Gizzard & the Lizard Wizard",
-            time: "03:47",
-            trackAudio: sectionAudio,
-        },
-    ];
 
     const handlePlayPause = (index) => {
         const currentAudio = audioRefs.current[index];
@@ -67,30 +40,34 @@ const MiddleSectionTracklistSection = () => {
             <div className="records-project-details-page-middle-section-left-content-tracks-section-content">
                 {/* <div className="records-project-details-page-middle-section-left-content-tracks-section-left-content"> */}
                 {
-                    tracklistData?.map((data, index) => (
+                    sectionData?.map((data, index) => (
                         <div key={index} className="records-project-details-page-middle-section-left-content-tracks-section-left-content-track-item">
-                            <div
-                                className={`records-project-details-page-middle-section-left-content-tracks-section-left-content-circle-button ${activeTrackIndex === index ? 'playing' : ''}`}
-                                onClick={() => handlePlayPause(index)}
-                            >
-                                <audio
-                                    ref={(el) => (audioRefs.current[index] = el)}
-                                    src={data.trackAudio}
-                                    onTimeUpdate={() => handleTimeUpdate(index)}
-                                />
-                                <div className="records-project-details-page-middle-section-left-content-tracks-section-left-content-progress-circle" style={{ background: `conic-gradient(#00b289 ${progress}%, #ccc 0)` }}></div>
-                                <div className="records-project-details-page-middle-section-left-content-tracks-section-left-content-play-pause-icon"><FontAwesomeIcon icon={activeTrackIndex === index ? faPauseCircle : faPlayCircle} /></div>
-                            </div>
+
+                            {
+                                data?.sectionAudio &&
+                                <div
+                                    className={`records-project-details-page-middle-section-left-content-tracks-section-left-content-circle-button ${activeTrackIndex === index ? 'playing' : ''}`}
+                                    onClick={() => handlePlayPause(index)}
+                                >
+                                    <audio
+                                        ref={(el) => (audioRefs.current[index] = el)}
+                                        src={data.sectionAudio}
+                                        onTimeUpdate={() => handleTimeUpdate(index)}
+                                    />
+                                    <div className="records-project-details-page-middle-section-left-content-tracks-section-left-content-progress-circle" style={{ background: `conic-gradient(#00b289 ${progress}%, #ccc 0)` }}></div>
+                                    <div className="records-project-details-page-middle-section-left-content-tracks-section-left-content-play-pause-icon"><FontAwesomeIcon icon={activeTrackIndex === index ? faPauseCircle : faPlayCircle} /></div>
+                                </div>
+                            }
                             <div className="records-project-details-page-middle-section-left-content-tracks-section-left-content-track-info">
-                                <p className="records-project-details-page-middle-section-left-content-tracks-section-left-content-track-title">{data.trackTitle}</p>
-                                <p className="records-project-details-page-middle-section-left-content-tracks-section-left-content-track-artist">{data.trackArtist}</p>
+                                <p className="records-project-details-page-middle-section-left-content-tracks-section-left-content-track-title">{data?.title}</p>
+                                <p className="records-project-details-page-middle-section-left-content-tracks-section-left-content-track-artist">{data?.artistName}</p>
                             </div>
-                            <div className="records-project-details-page-middle-section-left-content-tracks-section-left-content-track-time">{data.time}</div>
+                            <div className="records-project-details-page-middle-section-left-content-tracks-section-left-content-track-time">{data?.time}</div>
                         </div>
                     ))
                 }
                 {/* </div> */}
-            </div>
+            </div >
         </>
     );
 };
