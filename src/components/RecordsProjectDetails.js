@@ -8,7 +8,6 @@ const RecordsProjectDetails = () => {
     const { slugs } = useParams()
 
     const data = recordsPageProjectsData?.find(index => index?.slugs === slugs);
-    console.log("project data = ", data);
 
     return (
         <>
