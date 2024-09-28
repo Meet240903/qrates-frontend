@@ -46,14 +46,16 @@ const HomePageForFansSection = () => {
                     {
                         sectionData?.map((data, index) => (
                             <div key={index}>
-                                <Link to={`/${data?.slugs}`} style={{color:'#fff'}} target='_top'>
+                                <Link to={`/${data?.slugs}`} style={{ color: '#fff' }} target='_top'>
                                     <h1 onMouseEnter={() => setSectionBgImg(data?.bgImg)} onMouseLeave={() => setSectionBgImg(defaultBgImg)}>{data?.title}</h1>
                                 </Link>
                             </div>
                         ))
                     }
                 </div>
-                <p className='home-page-for-fans-section-footer-link'>The latest from the Qrates community →</p>
+                <p className='home-page-for-fans-section-footer-link'>
+                    <Link to='/qrates-curated' style={{color:'#fff', textDecoration:'none'}}>The latest from the Qrates community →</Link>
+                </p>
             </div>
         </>
     )

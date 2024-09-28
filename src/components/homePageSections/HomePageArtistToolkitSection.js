@@ -59,7 +59,9 @@ const HomePageArtistToolkitSection = () => {
                         ))
                     }
                 </div>
-                <p className='home-page-artist-toolkit-section-footer-link'>The latest from the Artist toolkit →</p>
+                <p className='home-page-artist-toolkit-section-footer-link'>
+                    <Link to='/articles' style={{ color: '#fff', textDecoration: 'none' }}>The latest from the Artist toolkit →</Link>
+                </p>
             </div>
         </>
     )

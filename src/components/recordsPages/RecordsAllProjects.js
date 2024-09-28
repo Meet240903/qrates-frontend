@@ -2,8 +2,9 @@ import React from 'react'
 import '../../assets/css/recordsPageCSS/recordsAllProjects.css'
 import recordPageFilterData from '../../data/RecordsPageFilterData'
 import recordsPageProjectsData from '../../data/RecordsPageProjectsData'
+import { Link } from 'react-router-dom'
 
-const RecordsAllProjects = ({filterFill}) => {
+const RecordsAllProjects = ({ filterFill }) => {
     const truncateTitle = (title, maxLength) => {
         if (!title) return ""; // Return empty string if no title is provided
 
@@ -19,10 +20,10 @@ const RecordsAllProjects = ({filterFill}) => {
                             {
                                 data?.filterData?.map((data, index) => (
                                     <div className='records-page-all-project-filter-section-content-links' key={index}
-                                    style={{
-                                        backgroundColor: data?.filterTitle === filterFill ? '#000' : '',
-                                        color: data?.filterTitle === filterFill ? '#fff' : ''
-                                    }}
+                                        style={{
+                                            backgroundColor: data?.filterTitle === filterFill ? '#000' : '',
+                                            color: data?.filterTitle === filterFill ? '#fff' : ''
+                                        }}
                                     >
                                         <span>{data?.filterTitle}</span>
                                     </div>
@@ -37,9 +38,11 @@ const RecordsAllProjects = ({filterFill}) => {
                     {
                         recordsPageProjectsData?.map((data, index) => (
                             <div className='col-md-4 records-page-project-section-content-box' key={index}>
-                                <div className='records-page-project-section-content-box-img'>
-                                    <img src={data?.sectionImg} className='img-fluid' alt='product-img' />
-                                </div>
+                                <Link to={`/records-project-details/${data?.slugs}`} target='_top'>
+                                    <div className='records-page-project-section-content-box-img'>
+                                        <img src={data?.sectionImg} className='img-fluid' alt='product-img' />
+                                    </div>
+                                </Link>
                                 <div className='records-page-project-section-content-box-body'>
                                     <h1>{truncateTitle(data?.projectTitle, 32)}</h1>
                                     <h2>{data?.artistTitle}</h2>

@@ -1,0 +1,209 @@
+.records-project-details-page-middle-section-title-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 2px solid #000;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.records-project-details-page-middle-section-header-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.records-project-details-page-middle-section-header-links h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: bold;
+}
+
+.records-project-details-page-middle-section-header-social-media-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.records-project-details-page-middle-section-header-social-media-content p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.records-project-details-page-middle-section-header-social-media-icon {
+  font-size: 24px;
+}
+
+.records-project-details-page-middle-section-right-content {
+  border-bottom: 2px solid #000;
+  padding: 2rem 1.6rem !important;
+}
+
+.records-project-details-page-middle-section-right-content h1 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.records-project-details-page-middle-section-right-content h3 {
+  font-size: 40px;
+}
+
+.records-project-details-page-middle-section-right-content-genre-titles {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.records-project-details-page-middle-section-right-content-genre-boxs {
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 2px 20px;
+  color: #000;
+}
+
+.records-project-details-page-middle-section-right-content-genre-boxs span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.records-project-details-page-middle-section-right-content-crowdfunding-section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.records-project-details-page-middle-section-right-content-crowdfunding-section {
+  margin: 2rem 0;
+}
+
+.records-project-details-page-middle-section-right-content-crowdfunding-section-content
+  p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+.records-project-details-page-middle-section-right-content-crowdfunding-section-content
+  h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.records-project-details-page-middle-section-right-content-back-now-button
+  button {
+  width: 100%;
+  background-color: #000;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.records-project-details-page-middle-section-right-content-add-to-wishlist-button
+  button {
+  width: 100%;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.records-project-details-page-middle-section-left-content-tracks-section,
+.records-project-details-page-middle-section-left-content-product-imgs-section,
+.records-project-details-page-middle-section-left-content-comments-section,
+.records-project-details-page-middle-section-left-content-profile-section {
+  border-top: 2px solid #000;
+  padding: 2rem;
+}
+
+.records-project-details-page-middle-section-left-content-about-section {
+  padding: 2rem;
+}
+
+.records-project-details-page-middle-section-left-content-about-section h1 {
+  font-weight: bold;
+}
+
+.records-project-details-page-middle-section-left-content-about-section p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.records-project-details-page-middle-section-left-content {
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  padding: 0 !important;
+}
+
+.records-project-details-page-middle-section-left-content-comments-section h1 {
+  font-weight: bold;
+}
+.records-project-details-page-middle-section-left-content-comments-section-content {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .records-project-details-page-middle-section-title-header {
+    overflow-x: auto;
+    justify-content: flex-start; /* Align items to start */
+    gap: 50px;
+    white-space: nowrap;
+    padding: 1rem 0.6rem;
+  }
+  .records-project-details-page-middle-section-header-social-media-icon {
+    font-size: 20px;
+  }
+  .records-project-details-page-middle-section-content{
+    flex-direction: column-reverse;
+  }
+  .records-project-details-page-middle-section-left-content-tracks-section,
+  .records-project-details-page-middle-section-left-content-about-section,
+  .records-project-details-page-middle-section-left-content-product-imgs-section,
+  .records-project-details-page-middle-section-left-content-comments-section,
+  .records-project-details-page-middle-section-left-content-profile-section {
+    padding: 1rem;
+  }
+  .records-project-details-page-middle-section-left-content {
+    border-right: none;
+  }
+  .records-project-details-page-middle-section-right-content{
+    padding: 2rem 1rem !important;
+  }
+  .records-project-details-page-middle-section-right-content h1{
+    font-size: 30px;
+  }
+  .records-project-details-page-middle-section-right-content h3{
+    font-size: 24px;
+  }
+  .records-project-details-page-middle-section-right-content-crowdfunding-section-content p{
+    font-size: 16px;
+  }
+  .records-project-details-page-middle-section-right-content-crowdfunding-section-content h4{
+    font-size: 16px;
+  }
+  .records-project-details-page-middle-section-left-content-about-section h1{
+    font-size: 30px;
+  }
+  .records-project-details-page-middle-section-left-content-about-section p{
+    font-size: 16px;
+    text-align: justify;
+  }
+}
