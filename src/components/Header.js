@@ -26,13 +26,13 @@ const Header = () => {
                     <nav className={`header-nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
                         <a href='#' className='header-discover-music-link' onClick={() => setShowDiscoverMusicSubmenu(!showDiscoverMusicSubmenu)}>
                             discover music
-                            <span style={{transform: showDiscoverMusicSubmenu ? 'rotate(-180deg)' : ''}}>&#9662;</span>
+                            <span style={{ transform: showDiscoverMusicSubmenu ? 'rotate(-180deg)' : '' }}>&#9662;</span>
                         </a>
                         {
                             showDiscoverMusicSubmenu && <div className='header-discover-music-submenu'>
                                 {
                                     headerDiscoverMusicDropDownData?.map((data, index) => (
-                                        <Link to={`/${data?.slugs}`} key={index} onClick={()=>{setShowDiscoverMusicSubmenu(false);setIsMobileMenuOpen(false)}} style={{color:'#fff',textTransform:'capitalize'}}>
+                                        <Link to={`/${data?.slugs}`} key={index} onClick={() => { setShowDiscoverMusicSubmenu(false); setIsMobileMenuOpen(false) }} style={{ color: '#fff', textTransform: 'capitalize' }}>
                                             <li>{data?.listTitle}</li>
                                         </Link>
                                     ))
@@ -47,8 +47,8 @@ const Header = () => {
                             <FontAwesomeIcon icon={faTwitter} className='header-social-icon' />
                         </div>
                         <div className={`${isMobileMenuOpen ? 'header-section-container-mobile-right-content' : 'd-none'}`}>
-                            <button onClick={() => setShowDiscoverMusicSubmenu(false)}>make your own</button>
-                            <a href='#' onClick={() => setShowDiscoverMusicSubmenu(false)}>login</a>
+                            <button onClick={() => { setIsMobileMenuOpen(false); setShowDiscoverMusicSubmenu(false) }}>make your own</button>
+                            <Link to='/sign-in' onClick={() => { setShowDiscoverMusicSubmenu(false); setIsMobileMenuOpen(false) }}>login</Link>
                         </div>
                     </nav>
                     <FontAwesomeIcon icon={faSearch} className='header-search-icon' onClick={() => setShowDiscoverMusicSubmenu(false)} />
