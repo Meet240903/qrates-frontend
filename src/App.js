@@ -13,6 +13,7 @@ import HowItWorks from "./components/HowItWorks";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import RecordsProjectDetails from "./components/RecordsProjectDetails";
+import StoriesDetailsPage from "./components/StoriesDetailsPage";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route exact path='/sign-in' element={<SignIn />} />
           <Route exact path='/sign-up' element={<SignUp />} />
           <Route exact path='/records-project-details/:slugs' element={<RecordsProjectDetails />} />
+          <Route exact path='/stories-details-page/:slugs' element={<StoriesDetailsPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

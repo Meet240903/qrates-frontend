@@ -41,13 +41,67 @@ import sectionImg40 from '../assets/images/storiesPageImgs/sectionImg40.avif'
 import sectionImg41 from '../assets/images/storiesPageImgs/sectionImg41.avif'
 import sectionImg42 from '../assets/images/storiesPageImgs/sectionImg42.avif'
 
+import storiesDetailPage1Img1 from '../assets/images/storiesDetailsImgs/storiesDetailsPage1Imgs/sectionImg1.avif'
+import storiesDetailPage1Img2 from '../assets/images/storiesDetailsImgs/storiesDetailsPage1Imgs/sectionImg2.avif'
+import storiesDetailPage1Img3 from '../assets/images/storiesDetailsImgs/storiesDetailsPage1Imgs/sectionImg3.avif'
+import storiesDetailPage1Img4 from '../assets/images/storiesDetailsImgs/storiesDetailsPage1Imgs/sectionImg4.avif'
+import storiesDetailPage1Img5 from '../assets/images/storiesDetailsImgs/storiesDetailsPage1Imgs/sectionImg5.avif'
+
 const storiesData = [
     {
         bgImg: sectionImg1,
         storyType: "scene check",
         title: "Purely Pop",
         slugs: 'story-detail-1',
-        content: "Any cross-genre combination of great hooks, powerful melodies, and mass",
+        content: "Any cross-genre combination of great hooks, powerful melodies, and mass appeal Image: Ari Voxx",
+        pageTitle: "Qrates Recommends",
+        storiesDetailsData: {
+            topSectionData: {
+                contentData: [
+                    {content: "As the winter night gets colder and shorter, take comfort in the warmth of these powerful pop releases from Qrates."},
+                    {content: "There's a seven-inch reissue of Tom Aspaul's Kylie Minogue-covered hit, Ari Voxx & the Sad Lads's retro space pop, Grant Knoche's bold drum n bass, and a new release from Stereofox's always inspiring pop roster."}
+                ]
+            },
+            middleSectionData:[
+                {
+                    title: "Indiana / Tom Aspaul",
+                    sectionImg: storiesDetailPage1Img2,
+                    contentData: [
+                        {content: "London-based singer-songwriter celebrates the 10-year anniversary of his career-making single Indiana with an extremely limited edition clear seven-inch vinyl with brand new artwork. First released in 2013 on Little Boots' On Repeat Records, the pop, electro, and atmospheric RnB track was released to critical acclaim, and was eventually covered by pop icon Kyle Minogue."},
+                        {content: "Produced by Grammy-nominated artist MNEK, the joyful love song drew comparisons to Britney Spears, Disclosure, and Prince"},
+                        {content: "This will by Aspaul's second Qrates campaign, following 2020's Black Country Disco synthpop album, inspired by the titular 70s funk and soul offshoot, and telling the story of a tumultuous 18 months in the artist's life. Featuring all new artwork and a second single Pioneer on the B-side, Indiano is a piece of pop music history worth holding on to."},
+                    ]
+                },
+                {
+                    title: "I Could Die Just Thinking of Us / Grant Knoche",
+                    sectionImg: storiesDetailPage1Img3,
+                    contentData: [
+                        {content: "This is the Los Angeles-based artist, producer, and songwriter's third EP, featuring ten tracks of experimental, pop renditions of drum n bass, electronica and downtempo styles."},
+                        {content: "Only 21 years old, and born and raised in Dallas, Texas, Knoche has been making music from age 11, and writes and produces everything himself. Synths and basslines drive the artist’s intimate lyrics, with tracks like “Icarus and Please Hurry marking opposite ends of the beats-to-ballad spectrum."},
+                        {content: "Having amassed a whopping 80 million views for his song debut, “First Hello” in 2022—and publicly announcing himself as a part of the LGBTQ+ community—Knoche’s future is no doubt as bright as the sounds of this latest EP."},
+                    ]
+                },
+                {
+                    title: "I'm Okay, Please Stop Asking / Ari Voxx & The Sad Lads",
+                    sectionImg: storiesDetailPage1Img4,
+                    contentData: [
+                        {content: "DC-born performer Ari Voxx leads the Sad Lads on the dynamic album of 80s/90s new-wave and pop, with a smattering of indie and electronica. As a unique fusion including space-age exotica and synth-pop, the band showcases an impressive stylistic range, from the rhythmic post-punk of Flamingo and the expansive baroque pop of Subjective Feeling, resembling the haunting American gothic of Lana Del Rey and Ethel Kain."},
+                        {content: "Driven by Voxx's commanding vocal performance, I'm Okay, Please Stop Asking is charged with both the strength and vulnerability of an artist adept at emotional complexity and self-expression."},
+                    ]
+                },
+                {
+                    title: "Under My Skin / Y A N A x Gena",
+                    sectionImg: storiesDetailPage1Img5,
+                    contentData: [
+                        {content: "The respective Sofia-based singer and producer teamed up for a delicate, yet empowering nine-piece album, and its intimate blend of RnB, and hip hop."},
+                        {content: "Released via Berlin-based music blog-come-label Stereofox, is described by the artists herself as a an intimate, authentic, and vulnerable album that “takes you through my fears, desires, parts of myself I’ve never been honest or brave enough to share.”"},
+                    ]
+                },
+            ],
+            bottomSectionData: {
+                title: "Ari Voxx & The Sad Lads / I'm Okay, Please Stop Asking is now available on Qrates.",
+            }
+        }
     },
     {
         bgImg: sectionImg2,
