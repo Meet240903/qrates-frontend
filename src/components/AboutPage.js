@@ -5,6 +5,7 @@ import sectionBgImg from '../assets/images/aboutusPageImgs/topSectionBgImg.jpg'
 import AboutPageTopTwoSection from './aboutUsSectionPages/AboutPageTopTwoSection'
 import AboutPageMiddleSection from './aboutUsSectionPages/AboutPageMiddleSection'
 import AboutPageSliderSection from './aboutUsSectionPages/AboutPageSliderSection'
+import AboutPageTeamSection from './aboutUsSectionPages/AboutPageTeamSection'
 
 const AboutPage = () => {
     return (
@@ -14,6 +15,7 @@ const AboutPage = () => {
             <AboutPageTopTwoSection />
             <AboutPageMiddleSection />
             <AboutPageSliderSection />
+            <AboutPageTeamSection />
         </>
     )
 }

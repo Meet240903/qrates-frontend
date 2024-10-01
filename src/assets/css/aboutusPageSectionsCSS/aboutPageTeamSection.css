@@ -1,0 +1,75 @@
+.about-us-page-team-section-container {
+  background-color: #fff804;
+  padding: 6rem 0;
+}
+
+.about-us-page-team-section-title {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-us-page-team-section-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.about-us-page-team-section-title p {
+  margin: 2rem 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about-us-page-team-section-title button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about-us-page-team-section-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 50px;
+  max-width: 1200px;
+  margin: 5rem auto;
+}
+
+.about-us-page-team-section-content-box{
+    text-align: center;
+}
+
+.about-us-page-team-section-content-box p{
+    margin: 0;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.about-us-page-team-section-content-box span{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.about-us-page-team-section-content-box img{
+    border-radius: 50%;
+    border: 2px solid #000;
+    height: 400px;
+}
+
+@media (max-width:768px) {
+    .about-us-page-team-section-container {
+        padding: 4rem 1rem;
+    }
+    .about-us-page-team-section-content {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .about-us-page-team-section-content-box img{
+        height: 200px;
+    }
+}
