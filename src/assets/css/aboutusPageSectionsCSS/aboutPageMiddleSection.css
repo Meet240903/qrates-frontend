@@ -1,0 +1,92 @@
+.about-us-page-middle-section-content {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  position: relative;
+}
+
+.about-us-page-middle-section-left-content {
+  background-color: #81836c;
+  border-right: 2px solid #000;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.about-us-page-middle-section-right-content {
+  background-color: #ff6711;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.about-us-page-middle-section-left-content h1,
+.about-us-page-middle-section-right-content h1 {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+}
+
+.about-us-page-middle-section-left-content img,
+.about-us-page-middle-section-right-content img {
+  border: 2px solid #000;
+  width: 500px;
+  height: 340px;
+  margin: 4rem 0;
+}
+
+.about-us-page-middle-section-left-content img {
+  transform: rotate(-10deg);
+}
+
+.about-us-page-middle-section-right-content img {
+  transform: rotate(10deg);
+}
+
+.about-us-page-middle-section-left-content p,
+.about-us-page-middle-section-right-content p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about-us-page-middle-section-absolute-title {
+  width: 200px;
+  padding: 40px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fff;
+  border: 2px solid #000;
+  top: -50px;
+  transform: rotate(-20deg);
+  text-align: center;
+  left: 100px;
+}
+
+.about-us-page-middle-section-absolute-title h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: bold;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .about-us-page-middle-section-container {
+    margin: 2rem 0;
+  }
+  .about-us-page-middle-section-left-content p,
+  .about-us-page-middle-section-right-content p {
+    font-size: 16px;
+    text-align: justify;
+    font-weight: 600;
+  }
+  .about-us-page-middle-section-absolute-title {
+    width: 150px;
+    padding: 20px;
+    left: 30px;
+    top: -30px;
+  }
+
+  .about-us-page-middle-section-absolute-title h2 {
+    font-size: 14px;
+  }
+}

@@ -58,12 +58,15 @@ const Footer = () => {
             contentData: [
                 {
                     content: "About Qrates",
+                    slugs: "about-us"
                 },
                 {
                     content: "Careers",
+                    slugs: "careers"
                 },
                 {
                     content: "Partners",
+                    slugs: "partners"
                 },
             ]
         },
@@ -75,6 +78,7 @@ const Footer = () => {
                 },
                 {
                     content: "Contact Us",
+                    slugs: "contact"
                 },
                 {
                     content: "Returns",

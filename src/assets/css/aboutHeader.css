@@ -1,0 +1,25 @@
+.about-header-page-section-container {
+  background-color: #000;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+}
+
+
+.about-header-page-section-container h4{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .about-header-page-section-container {
+        overflow-x: auto;
+        justify-content: flex-start;
+        white-space: nowrap;
+        padding: 2rem;
+    }
+}
