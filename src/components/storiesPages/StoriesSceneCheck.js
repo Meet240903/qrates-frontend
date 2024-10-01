@@ -1,5 +1,6 @@
 import React from 'react'
 import storiesData from '../../data/StoriesData';
+import { Link } from 'react-router-dom';
 
 const StoriesSceneCheck = () => {
     const truncateTitle = (title, maxLength) => {
@@ -17,16 +18,18 @@ const StoriesSceneCheck = () => {
                         selectedStoriesData?.map((data, index) => (
                             <div className='col-md-4 stories-page-story-section-content-box' key={index}>
                                 <div className='stories-page-story-section-inner-content-box'>
-                                    <div className='stories-page-story-section-inner-content-box-img'
-                                        style={{
-                                            backgroundImage: data?.bgImg ?
-                                                `url(${data.bgImg})` : 'none'
-                                        }}
-                                    >
-                                        <div className='stories-page-story-section-inner-content-box-img-span-box'>
-                                            <span>{data?.storyType}</span>
+                                    <Link to={`/stories-details-page/${data?.slugs}`} target='_top' style={{ textDecoration: 'none' }}>
+                                        <div className='stories-page-story-section-inner-content-box-img'
+                                            style={{
+                                                backgroundImage: data?.bgImg ?
+                                                    `url(${data.bgImg})` : 'none'
+                                            }}
+                                        >
+                                            <div className='stories-page-story-section-inner-content-box-img-span-box'>
+                                                <span>{data?.storyType}</span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                     <div className='stories-page-story-section-inner-content-box-body'>
                                         <p>{data?.title}</p>
                                         <h3>{truncateTitle(data?.content, 50)}</h3>

@@ -17,7 +17,7 @@ const StoriesAllStories = () => {
                         storiesData?.map((data, index) => (
                             <div className='col-md-4 stories-page-story-section-content-box' key={index}>
                                 <div className='stories-page-story-section-inner-content-box'>
-                                    <Link to={`/stories-details-page/${data?.slugs}`} style={{textDecoration:'none'}}>
+                                    <Link to={`/stories-details-page/${data?.slugs}`} target='_top' style={{textDecoration:'none'}}>
                                         <div className='stories-page-story-section-inner-content-box-img'
                                             style={{
                                                 backgroundImage: data?.bgImg ?
