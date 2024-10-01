@@ -27,7 +27,7 @@ const StoriesDetailsTopSection = ({ sectionData }) => {
     return (
         <>
             <div className='stories-details-page-top-section-container'>
-                <img src={sectionData?.bgImg} className='img-fluid' alt='section-top-img' />
+                <img src={sectionData?.bgImg} className='stories-details-page-top-section-container-img-top' alt='section-top-img' />
                 <div className='stories-details-page-top-section-title'>
                     <div className='stories-details-page-top-section-title-box'>
                         <span>{sectionData?.storyType}</span>

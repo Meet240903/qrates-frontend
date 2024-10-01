@@ -30,7 +30,7 @@ const StoriesAllStories = () => {
                                         </div>
                                     </Link>
                                     <div className='stories-page-story-section-inner-content-box-body'>
-                                        <p>{data?.title}</p>
+                                        <p>{truncateTitle(data?.title, 30)}</p>
                                         <h3>{truncateTitle(data?.content, 50)}</h3>
                                     </div>
                                 </div>

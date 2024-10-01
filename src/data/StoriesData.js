@@ -259,6 +259,50 @@ import storiesDetailPage35Img5 from '../assets/images/storiesDetailsImgs/stories
 import storiesDetailPage35Img6 from '../assets/images/storiesDetailsImgs/storiesDetailsPage35Imgs/sectionImg6.avif'
 import storiesDetailPage35Img7 from '../assets/images/storiesDetailsImgs/storiesDetailsPage35Imgs/sectionImg7.avif'
 
+import storiesDetailPage36Img2 from '../assets/images/storiesDetailsImgs/storiesDetailsPage36Imgs/sectionImg2.avif'
+import storiesDetailPage36Img3 from '../assets/images/storiesDetailsImgs/storiesDetailsPage36Imgs/sectionImg3.avif'
+
+import storiesDetailPage37Img2 from '../assets/images/storiesDetailsImgs/storiesDetailsPage37Imgs/sectionImg2.avif'
+import storiesDetailPage37Img3 from '../assets/images/storiesDetailsImgs/storiesDetailsPage37Imgs/sectionImg3.avif'
+import storiesDetailPage37Img4 from '../assets/images/storiesDetailsImgs/storiesDetailsPage37Imgs/sectionImg4.avif'
+import storiesDetailPage37Img5 from '../assets/images/storiesDetailsImgs/storiesDetailsPage37Imgs/sectionImg5.avif'
+import storiesDetailPage37Img6 from '../assets/images/storiesDetailsImgs/storiesDetailsPage37Imgs/sectionImg6.avif'
+import storiesDetailPage37Img7 from '../assets/images/storiesDetailsImgs/storiesDetailsPage37Imgs/sectionImg7.avif'
+import storiesDetailPage37Img8 from '../assets/images/storiesDetailsImgs/storiesDetailsPage37Imgs/sectionImg8.avif'
+
+import storiesDetailPage38Img2 from '../assets/images/storiesDetailsImgs/storiesDetailsPage38Imgs/sectionImg2.avif'
+import storiesDetailPage38Img3 from '../assets/images/storiesDetailsImgs/storiesDetailsPage38Imgs/sectionImg3.avif'
+import storiesDetailPage38Img4 from '../assets/images/storiesDetailsImgs/storiesDetailsPage38Imgs/sectionImg4.avif'
+import storiesDetailPage38Img5 from '../assets/images/storiesDetailsImgs/storiesDetailsPage38Imgs/sectionImg5.avif'
+import storiesDetailPage38Img6 from '../assets/images/storiesDetailsImgs/storiesDetailsPage38Imgs/sectionImg6.avif'
+import storiesDetailPage38Img7 from '../assets/images/storiesDetailsImgs/storiesDetailsPage38Imgs/sectionImg7.png'
+
+import storiesDetailPage39Img2 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg2.avif'
+import storiesDetailPage39Img3 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg3.avif'
+import storiesDetailPage39Img4 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg4.avif'
+import storiesDetailPage39Img5 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg5.avif'
+import storiesDetailPage39Img6 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg6.avif'
+import storiesDetailPage39Img7 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg7.avif'
+import storiesDetailPage39Img8 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg8.avif'
+import storiesDetailPage39Img9 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg9.avif'
+import storiesDetailPage39Img10 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg10.avif'
+import storiesDetailPage39Img11 from '../assets/images/storiesDetailsImgs/storiesDetailsPage39Imgs/sectionImg11.avif'
+
+import storiesDetailPage40Img2 from '../assets/images/storiesDetailsImgs/storiesDetailsPage40Imgs/sectionImg2.avif'
+import storiesDetailPage40Img3 from '../assets/images/storiesDetailsImgs/storiesDetailsPage40Imgs/sectionImg3.png'
+import storiesDetailPage40Audio1 from '../assets/images/storiesDetailsImgs/storiesDetailsPage40Imgs/sectionAudio1.mp3'
+
+import storiesDetailPage41Img2 from '../assets/images/storiesDetailsImgs/storiesDetailsPage41Imgs/sectionImg2.avif'
+import storiesDetailPage41Img3 from '../assets/images/storiesDetailsImgs/storiesDetailsPage41Imgs/sectionImg3.avif'
+import storiesDetailPage41Img4 from '../assets/images/storiesDetailsImgs/storiesDetailsPage41Imgs/sectionImg4.avif'
+import storiesDetailPage41Img5 from '../assets/images/storiesDetailsImgs/storiesDetailsPage41Imgs/sectionImg5.avif'
+
+import storiesDetailPage42Img2 from '../assets/images/storiesDetailsImgs/storiesDetailsPage42Imgs/sectionImg2.avif'
+import storiesDetailPage42Img3 from '../assets/images/storiesDetailsImgs/storiesDetailsPage42Imgs/sectionImg3.avif'
+import storiesDetailPage42Img4 from '../assets/images/storiesDetailsImgs/storiesDetailsPage42Imgs/sectionImg4.avif'
+import storiesDetailPage42Img5 from '../assets/images/storiesDetailsImgs/storiesDetailsPage42Imgs/sectionImg5.avif'
+import storiesDetailPage42Img6 from '../assets/images/storiesDetailsImgs/storiesDetailsPage42Imgs/sectionImg6.avif'
+
 const storiesData = [
     {
         bgImg: sectionImg1,
@@ -1922,7 +1966,7 @@ const storiesData = [
         pageTitle: "Wax Heart",
         storiesDetailsData: {
             topSectionData: {
-               
+
             },
             middleSectionData: [
                 {
@@ -1969,51 +2013,353 @@ const storiesData = [
     {
         bgImg: sectionImg36,
         storyType: "qrates biz",
-        title: "The rise, fall and slow rise of the vinyl in",
+        title: "The rise, fall and slow rise of the vinyl in 2020",
         slugs: 'story-detail-36',
-        content: "We take a deep dive into the rise of the vinyl record in a time of digital",
+        content: "We take a deep dive into the rise of the vinyl record in a time of digital downloads and very fast culture.",
+        pageTitle: "Vinyl Revival",
+        storiesDetailsData: {
+            topSectionData: {
+                contentData: [
+                    { content: "Music has been performed, played and packaged in all sorts of ways since people could hold a note. Whether it’s in the changing forms of musical notation dating as far back as 1400 BC or the invention of the very first gramophone at the turn of the 20th century, attempts to record this most primal human artform have always been evolving." },
+                    { content: "More recently, in the one-hundred-or-so years since inventor Emil Berliner turned music production and accessibility on its head with the first phonograph, all sorts of analog recording formats have come and gone across cassette tapes, compact discs, and the short-lived attempt by Sony to monopolize the market with the MiniDisc in the 90s." },
+                    { content: "Through all of that, the warmth of sound and design aesthetic of vinyl records has stood uncontested, its weight and appeal as an object and an artwork persisting throughout." },
+                    { content: "“I think vinyl sounds way better than digital because it doesn't compress the sound,” says Japanese progressive house DJ and Qrates campaign alum Qrion. “The needle makes really warm noises.”" },
+                ]
+            },
+            middleSectionData: [
+                {
+                    sectionImg: storiesDetailPage36Img2,
+                    contentData: [
+                        { content: "Beyond the sound and appearance of a vinyl record—with its most common 12-inch album sleeve and grooved PVC disc—there’s always been a specific context and a culture surrounding every new development in its form. There was the post-war jazz of early shellac 78s, and the 45-inch singles and jukeboxes of the rock ‘n’ roll generation. In the 60s and 70s you had specialist street vendors selling 33 rpm LPs who would become their own iconic record stores in every major city, or peripheral musical Mecca. Later, early enterprising bootleggers would grow their businesses into the Megastore music monopolies of the 80s, before slowly succumbing to the pressures of pirating and digital downloads well into the new millennium." },
+                        { content: "“I think vinyl is making a comeback and has been for a few years,” says Australian instrumental hip hop artist Ta-ku about the so-called “vinyl revival” and its appeal for collectors and music enthusiasts alike. “We're so inundated with the digital aspect of things, people do appreciate taking that step away and enjoying the more analog approach, the more analog side of music.”" },
+                    ]
+                },
+                {
+                    sectionImg: storiesDetailPage36Img3,
+                    contentData: [
+                        { content: "“I think it forces you to slow down in a certain way that helps you appreciate the music that you're playing. It's the pinnacle of the music listening experience,” offers American rapper Sol. The demand for his very first pressing of an eight-year-old album via Qrates in February far exceeded his expectations. “It made me wonder why I hadn't pressed any records on vinyl before now. It felt like something that people had been waiting for.”" },
+                        { content: "Whatever it might be, anyone with a passion will tell you that there’s no limit to the level of research and discovery around their chosen subject—which includes the history of its production and the changing ways it has been mediated over time." },
+                    ]
+                },
+            ],
+        }
     },
     {
         bgImg: sectionImg37,
         storyType: "qrates biz",
         title: "A Match Made In Heaven",
         slugs: 'story-detail-37',
-        content: "We take a look at the wonderful coming together of vinyl and video",
+        content: "We take a look at the wonderful coming together of vinyl and video game soundtracks and how these two polarising formats came to unite as one.",
+        pageTitle: "Vinyl and Video Game Soundtracks:",
+        storiesDetailsData: {
+            topSectionData: {
+                contentData: [
+                    { content: "Music and video games are two of the most enjoyed pastimes throughout the entire world. You can’t turn on a television without hearing a chart-topping track hit your ears or an advert for the latest shoot-em-up or sports sim being beamed directly into your brain. Recently, these two creative worlds have begun to collide with video game soundtracks on vinyl becoming extremely popular. But why has this happened?" },
+                    { content: "Although being invented decades apart, vinyl and video games do have a lot in common when you think about it. They are both extremely collectible, they give fans a way to show off their passion for something they love and they allow the listener to revel in a sense of nostalgia for something they enjoy." },
+                    { content: "To further understand why vinyl and video games have proved a popular joint force, it’s useful to know a bit more about the history of video games and the kind of soundtracks that have accompanied them over the years." },
+                ],
+                sectionImg1: storiesDetailPage37Img2,
+                sectionImg2: storiesDetailPage37Img3,
+            },
+            middleSectionData: [
+                {
+                    title: "Cuphead",
+                    sectionImg: storiesDetailPage37Img4,
+                    contentData: [
+                        { content: "Cuphead is a fantastic collaboration of beautifully rendered, early-Disney style cartoon graphics against a fast-flowing, jazz-infused soundtrack. The game’s mix of side-scrolling platform/shooter action is perfectly complemented by the fast-paced, manic soundscapes created that feel straight out of the 1930s. You don’t need the game to enjoy the music, working perfectly well as a standalone album for any jazz fan." },
+                        { content: "[Video] Cuphead OST - Complete Soundtrack" },
+                    ]
+                },
+                {
+                    title: "Rez Infinite",
+                    sectionImg: storiesDetailPage37Img5,
+                    contentData: [
+                        { content: "Into your dance music? The Rez Infinite vinyl soundtrack may be for you. Rez has been released on various consoles over the years, but it didn’t come alive, both musically and visually, until it was released in the virtual reality format. Rez Infinite is an on-the-rails 3D shooter that is intrinsically linked to its dance soundtrack. Each level features its own track, full of drops, beats, 808s and synthy loops. Depending on how you play, the music can mutate and develop, making it a pretty unique experience." },
+                    ]
+                },
+                {
+                    title: "Streets Of Rage 2",
+                    sectionImg: storiesDetailPage37Img6,
+                    contentData: [
+                        { content: "For those of you that enjoy your retro video game soundtracks, Streets of Rage 2 is one of the best. Released in 1992, the pixellated, side-scrolling beat-em-up is accompanied by intense use of the Megadrive/Genesis game console’s blips and beeps, pushing the sound technology of the time to its max. Created by video game composer Yuzo Koshiro, it sits on the ‘hard-core techno’ scale with a unique blend of beats and breaks. A soundtrack that still holds up well today." },
+                    ]
+                },
+                {
+                    title: "Final Fantasy 7",
+                    sectionImg: storiesDetailPage37Img7,
+                    contentData: [
+                        { content: "We’re bringing out the big guns now. Final Fantasy games have always had immense and emotionally driven soundtracks, but it wasn’t until the release of 1997’s Final Fantasy 7 on the Playstation that the true scope of the accompanying music could begin to be realised. The game was released as a remake in 2020, featuring an updated soundtrack but keeping many of the original songs in a more cinematic form. Using an orchestra to create an emotional experience that leads you through the RPG-based world, the music keeps you immersed in the game but also holds up well as a solo piece. You can also get a vinyl version that has both the original and remake soundtracks." },
+                    ]
+                },
+                {
+                    title: "The Last Of Us",
+                    sectionImg: storiesDetailPage37Img8,
+                    contentData: [
+                        { content: "Touted as having one of the best scripts and stories of any video game, The Last of Us had to have a soundtrack to match. It doesn’t disappoint. A third-person action-adventure game, The Last of Us is set across a post-apocalyptic future where you must defend against hostile creatures and mutated humans. The soundtrack suits the isolated, desperate atmosphere perfectly, playing on ambient sounds and secluded tones, but also able to build in climatic pieces to reflect the more intense sections of the game. A true masterpiece." },
+                    ]
+                },
+            ],
+        }
     },
     {
         bgImg: sectionImg38,
         storyType: "qrates biz",
         title: "Fat Beats joins Qrates in launching a risk-",
         slugs: 'story-detail-38',
-        content: "The iconic hip hop record store-come-label and distribution company founder Joseph Abajian gets pers",
+        content: "The iconic hip hop record store-come-label and distribution company founder Joseph Abajian gets personal on why he loves records & where the vinyl revival is headed",
+        pageTitle: "Keeping it spinning",
+        storiesDetailsData: {
+            topSectionData: {
+                contentData: [
+                    { content: "“Fair deals where the artist appreciated the agreement that you made,” says Joseph “DJ Jab” Abajian about what he sees as the biggest benefit of selling vinyl for independent artists and labels. “They appreciate the cut that they're getting because it's so different than the way it was with majors.” Abajian is the founder of iconic hip hop record store-come-label and distribution network Fat Beats. He’s seen it through from its humble beginnings as a New York basement space for committed fans in the early 90s, to becoming a hidden rap Mecca patroned and performed by the likes of Jay Z, Eminem, Outkast, and a young, unknown Kanye West, among many others." },
+                    { content: "A low-key cult figure in his own right, Abajian has watched the music industry catch up with the hip hop scene, while also seeing the popularity of vinyl ebb and flow with changes in the music culture and technology. Right now, there is no doubt amongst vendors, fans and artists alike that vinyl continues to experience a resurgence. In doing so, Qrates are looking to produce records more responsibly, by joining with Fat Beats to build a risk-free, waste-free vinyl retail network, while continuing their shared mission to democratize vinyl for independent musicians and labels." },
+                    { content: "Below, Abajian shares some of his wisdom and experience around the future of vinyl and creating a community that developed into a very successful business model." },
+                ],
+                sectionImg1: storiesDetailPage38Img2,
+                sectionImg2: storiesDetailPage38Img3,
+            },
+            middleSectionData: [
+                {
+                    title: "Why is vinyl resonating so strongly with today’s music fans?",
+                    sectionImg: storiesDetailPage38Img4,
+                    contentData: [
+                        { content: "I think fans are fans of the artists—they like them a lot. They're following them, they're checking out their social media. But when they buy their digital album, they still don't really have a piece of the artist. When you buy the vinyl, you actually have the artist's work in your hand. You can touch it, move it around, and play with it. I think there was an era where a lot of fans and young kids didn’t even know what vinyl was. When they finally discover it, it gets personal. I've seen younger kids, when you buy them their first vinyl of their favorite artist, you're almost opening up the world to them. They're like, ‘I have a piece of my favorite artist with me now. It's not only an idea that's in my phone.’ I think it's that’s why it's picked up so fast." },
+                    ]
+                },
+                {
+                    title: "What is your most cherished vinyl record?",
+                    sectionImg: storiesDetailPage38Img5,
+                    contentData: [
+                        { content: "I would have to say it's the first one I ever got, the Sugarhill Gang 12-inch Rapper's Delight. I got that when I was in fourth grade, I believe. We used to be in class and all of us would just do the Sugarhill beat and stuff." },
+                    ]
+                },
+                {
+                    title: "What are some of your favorite album covers?",
+                    sectionImg: storiesDetailPage38Img6,
+                    contentData: [
+                        { content: "I have to say Public Enemy. I used to always love their covers. Even the 12-inches they had for “Rebel Without a Pause”—I think they had the Cadillacs, and they had the lights on, and they were all standing in front of them. I like A Tribe Called Quest. There're so many different records but those ones kind of stood out. I like the early Wu-Tang ones, too." },
+                    ]
+                },
+            ],
+            bottomSectionData: {
+                sectionImg: storiesDetailPage38Img7,
+                title: "DUCKWRTH / SG8* (Limited Edition) is now available on Qrates.",
+            }
+        }
     },
     {
         bgImg: sectionImg39,
         storyType: "qrates biz",
         title: "Eight must-have vinyl stocking stuffers for",
         slugs: 'story-detail-39',
-        content: "The Qrates teams shares a list of some 2021 favorites that are available to purchase in time for Christmas",
+        content: "The Qrates team shares a list of some of their favourite 2021 records that are available to purchase in time for Christmas",
+        pageTitle: "Deck the Halls:",
+        storiesDetailsData: {
+            topSectionData: {
+                contentData: [
+                    { content: "With the holiday season well in view, it's high time to start thinking about those gifts from friends and family. From the easy lo-fi instrumentals of Cookin' Soul and L.Dre to the commanding vocal presence of singer-song writers like Raquel Rodriguez and Rett Madison—even a Christmas-themed Lord of the Rings parody album—there's certainly something for a person of any persuasion, in-stock and available for purchase on Qrates." },
+                    { content: "Here’s a list of some of our top albums of the year that are available to buy now:" },
+                ],
+                sectionImg1: storiesDetailPage39Img2,
+                sectionImg2: storiesDetailPage39Img3,
+            },
+            middleSectionData: [
+                {
+                    title: "L.Dre, Sno-Fi",
+                    sectionImg: storiesDetailPage39Img4,
+                    contentData: [
+                        { content: "i am a table’s L.Dre shares an instant classic for anyone looking to snuggle up next to the fireplace with these smooth and jazzy, lo-fi beats. The Los Angeles native and online cult figure has been making music since childhood, studying production, then making a name for himself through social media. He's been known to sample Disney and rework other cartoons in his nostalgia-soaked chill wave and analogue funk. This record is often built over timeless yuletide classics, including “White Christmas”, “Have Yourself A Merry Little Christmas” and “Deck the Halls”." },
+                    ]
+                },
+                {
+                    title: "Rook1e & Softy, Portrait in Love",
+                    sectionImg: storiesDetailPage39Img5,
+                    contentData: [
+                        { content: "Los Angeles-based producer Rook1e teams up with Seoul’s Softy to create this romantic evening stroll through the calm euphoria of devotion. Vinyl crackling and bird song samples underpin the easy groove of “coffee kisses”. The acoustics of hammers on the inner strings of a piano set the vital tone of real life versus the smooth jazz rhythms of a DAW on “falling asleep together while it rains”. There’s a cozy introspection to Portrait in Love that not only makes it another awesome addition to United Common Records catalogue but a must-have accompaniment to Christmas-time contemplations of the year that was." },
+                    ]
+                },
+                {
+                    title: "Rett Madison, Pin-Up Daddy",
+                    sectionImg: storiesDetailPage39Img6,
+                    contentData: [
+                        { content: "For anyone looking to indulge in the grittier and more honest side of the indie-folk continuum, Rett Madison’s bellowing, queer-feminist anthems and heartbreak ballads toe the line between power and vulnerability. The LA-based, West Virginia-raised singer-songwriter and protégé to Vulfpeck’s  Theo Katzman has been performing around the Californian city since dropping out of a USC music program at 18 years old. Now in their early 20s, Madison has this beautiful debut to show for all their hard work and commitment. It features hits “Kerosene”, “Shame is a River” and the titular “Pin-up Daddy”, which also inspired a stunning depiction of an alternative Pageant Person painted by Miriam Cortez on the cover." },
+                    ]
+                },
+                {
+                    title: "Tamir Barzilay, Home Is Not A Place",
+                    sectionImg: storiesDetailPage39Img7,
+                    contentData: [
+                        { content: "As an Israeli multi-instrumentalist who has been living in Los Angeles for the last seven years—New York before that—Tamir Barzilay knows a thing or two about what it means to be away from home. And while pandemic restrictions keep many of us expats and transplants away from our loved ones and birthplaces, this contemplative collection of guitar and percussion-led instrumental tracks carries the weight and the wistfulness of longing. As a veteran musician who’s collaborated with the likes of Macy Gray, Jason Mraz, Adam Lambert, and more, Barzilay’s third album bears the calm confidence of someone who built a life and a career in the US from scratch." },
+                    ]
+                },
+                {
+                    title: "Cookin’ Soul, WHATEVA VOL. 4",
+                    sectionImg: storiesDetailPage39Img8,
+                    contentData: [
+                        { content: "The artwork of the Grammy Award-winning producer and DJ's latest selection of effortless lo-fi hip hop and boom bap style beats does more than echo its Playstation 1 inspiration. It's also designed by Teriyaki Donut, the artist behind the cover for Cookin' Soul's iconic 2018 'DOOM XMAS' collaboration with MF DOOM. As always, drums, snare and samples seamlessly weave in, around and underneath a given emcee's deft and demanding flows." },
+                    ]
+                },
+                {
+                    title: "Raquel Rodriguez, Sweet Side",
+                    sectionImg: storiesDetailPage39Img9,
+                    contentData: [
+                        { content: "A sensual soul, jazz and RnB record from Mexican-American singer-songwriter Raquel Rodriguez, Sweet Side was originally set for release in February of 2020. The COVID-19 crisis to follow and subsequent lockdown, meant that Rodriguez and her producer partner Sam Brawner (Moonchild, Mac Ayres) took the extra time to build their business and really perfect their sound. Sweet Side is its silky-smooth outcome. Also featuring tracks with sound production from Australian beatmaker, MXXWLL, rap from local emcee Ill Camille, and vintage sounds of Jamiroquai members Matt Johnson and PJ Morton, the record is an evocative mélange of its synth, electro-funk and old school influences." },
+                    ]
+                },
+                {
+                    title: "Brendan Dalton & The 1740 Boys Choir, Christmas in Middle-Earth",
+                    sectionImg: storiesDetailPage39Img10,
+                    contentData: [
+                        { content: "Fans of Lord of the Rings and musical parodies along the lines of Weird Al Yankovic and Spinal Tap can enjoy a Christmas-themed album of tracks played and performed by New York-based actor, musician and composer Brendan Dalton and his fictional band, The 1740 Boys Choir. The culmination of eight years of material, the project took advantage of pandemic downtime in 2020 to polish off existing demos and record bits and pieces remotely with other collaborators. The 10-track album features titles like “Christmas in the Shire”, Arwen (Are You Leaving Me on Christmas?) and Thinking of You on Christmas (the Final Thoughts of Gandalf the Grey). It takes myriad folk and Celtic punk influences to accommodate the funny and fan-fictional content, including the “ring-a-ding-a-ding” of “Gollum’s Christmas” with lyrics like, “you cook your potatoes but we won't be eating lunch,/ unless you're cooking something with a 24-carat golden crunch.”" },
+                    ]
+                },
+                {
+                    title: "DUCKWRTH, SG8*",
+                    sectionImg: storiesDetailPage39Img11,
+                    contentData: [
+                        { content: "The latest in what's to become a creative suite of interdisciplinary releases coming out under the 'SuperGood' umbrella, SG8* is a post-lockdown exploration of emerging into the outside world after over a year of social-distancing. The eight-track EP addresses the residue of stress and anxiety that still lingers, with tracks like “No Chill”, “Masks Off (Feeling)” and “We Outside”. But while some of the themes might seem a little heavy, these deftly-constructed pop numbers tackle these issues with a lively and soulful RnB that's fun and infectious. DUCKWRTH brings together his eclectic musical influences—crossing rap, hip hop and punk; metal, house and neo soul—to this newest evolution in his self-coined 'funk wave' genre." },
+                    ]
+                },
+            ],
+
+        }
     },
     {
         bgImg: sectionImg40,
         storyType: "qrates biz",
-        title: "A dive into the fast-paced world of Web3 and",
+        title: "A dive into the fast-paced world of Web3 and how it can benefit independent musicians",
         slugs: 'story-detail-40',
-        content: "New platforms like Tellie are making use of blockchain technology to help",
+        content: "New platforms like Tellie are making use of blockchain technology to help musicians and creatives regain their independence in the digital age of streaming",
+        pageTitle: "Down with walled gardens:",
+        storiesDetailsData: {
+            topSectionData: {
+                contentData: [
+                    { content: "“We don't resonate with the get-rich-quick attitude that exists in the [blockchain] space,” says Tellie’s Jack Bogdan. “There's a really fundamental value that the technology can provide to artists and creatives.” Calling in from Los Angeles, the Head of Product for this upstart website building platform for musicians is discussing how so-called Web 3.0, (or Web3) can help artists regain their independence online. The problem to be solved, he explains, is “all the different walled gardens that you live on as an artist.” Continuing, that “if you want to bring your audience from Spotify, Instagram, TikTok, or wherever your social audience lives, you can't put them anywhere. You have to use that platform to post something and have them route somewhere else.”" },
+                    { content: "With the tremendous media interest surrounding non-fungible tokens (NFTs) in 2021—centred around a frenzied hype cycle and large sums paid for digital artworks—some confusion among the public still exists around what exactly Web3 is. It can be an intimidating and mystifying space, with its cryptic terminology that is not yet second nature for today’s internet users." },
+                ],
+                sectionImg: storiesDetailPage40Img3,
+                sectionAudio: storiesDetailPage40Audio1,
+                audioTitle: "Underbelly",
+                artistTitle: "Fish Joyeur",
+            },
+            middleSectionData: [
+                {
+                    title: "At its core, the concept refers to a new model for the internet that focuses on blockchain technology.",
+                    sectionImg: storiesDetailPage40Img2,
+                    contentData: [
+                        { content: "In simple terms, it’s a means of recording transactions between two individuals without the need for a central party. Some blockchains allow not only for a record of transactions to be made, but for implementing additional code, or “smart contracts”, such as those used for the unique digital tokens of NFTs. When something is recorded on a blockchain, it is added to a network that ensures it cannot be undone, nor can it be erased and modified from the database. “Cutting out the middlemen” is how best to describe the benefits of this process in layperson’s terms. In today’s “Web 2.0” world of social media platforms and streaming giants, this decentralization can be a useful gateway for musicians and artists to gain greater agency over their work. “This ownership model is the idea that you own something that lives in a database that is not tied to any one platform,” explains Bogdan on NFTs. “[It] says you have a direct connection or relationship with this artist or creator.” Continuing, “you as an artist can suddenly say, 'oh, I want to take all my fans that have supported me, and bring them over here into this new context, and do this cool activity with them'. You [the fan] have the key, because you've already supported me and you're not tied into registering for a new account.”" },
+                    ]
+                },
+            ],
+            bottomSectionData:{
+                sectionImg: storiesDetailPage40Img3,
+                title: "Joyeur / How To Love Yourself And Not Destroy Everything is now available on Qrates."
+            }
+        }
     },
     {
         bgImg: sectionImg41,
         storyType: "qrates biz",
-        title: "Ten87 on the advantages of long-term",
+        title: "Ten87 on the advantages of long-term studios, fostering community, & changing musical landscapes",
         slugs: 'story-detail-41',
-        content: "The London-based organization's Rob Burn and Julian Prentis talk providing",
+        content: "The London-based organization's Rob Burn and Julian Prentis talk providing studios and sites for professional development to an array of talent—from independent musicians and producer to engineers and labels",
+        pageTitle: "Filling the gaps:",
+        storiesDetailsData: {
+            topSectionData: {
+                contentData: [
+                    { content: "“Why isn't there a place that's affordable, that covers all of the checkpoints to put a record out that modern record producers need?” says Ten87 founder Rob Burn about the idea that sparked their London-based studio complex back in 2014. With a background as a record producer, Burn and collaborator Stef “Lakosa” Smith saw a service that was lacking for independent music makers, after working at home and hopping around from studio hire to studio hire. “A soundproof, acoustically-treated space that felt welcoming, but also, that would act as a home for my network.”" },
+                    { content: "Now consisting of three sites in the north London area of Tottenham, with plans for a further location in south London’s Brixton, Ten87’s concept opens up a discussion on the rapidly changing industry, where musicians are expected to wear the many hats once filled by record labels. With their offer of purpose-built spaces, as well as a site to network and collaborate—similar to the model of affordable visual artist studios and shared workspaces—the organization has quickly built a base for an impressive array of talent. Among the over 150 recording artists and groups at Ten87 include the likes of Leon Vynehall, Maribou State, Mount Kimbie, Hinako Omori, TSHA, Ahadadream, and more. “Today, we're blessed to be home to an incredible community of independent artists, producers, engineers mostly, but also some labels,” Burn explains. “Now we've got a public-facing, day-hire space, which is open for private hire, we've started seeing some incredible credits and artists use that space, as well.”" },
+                ],
+            },
+            middleSectionData: [
+                {
+                    title: "This is not just your typical studio for hire, however.",
+                    sectionImg: storiesDetailPage41Img2,
+                    contentData: [
+                        { content: "The brunt of Ten87’s spaces are a blank slate for artists to bring their own equipment and call the sites home. “I think that's what makes it really attractive for a lot of people,” explains Burn. “The fact that they can come in, put their own stamp on a space, and bring all of the equipment they've amassed over their life.” Through all this, fostering community is key,showing what’s missing from the professional development of artists in increasingly isolated home recording scenarios. “The vast majority of the spaces at Ten87 are designed for long-term residencies for those artists, producers, musicians.”" },
+                        { content: "We spoke with Ten87’s founder Rob Burn and brand manager Julian Prentis on some of the novel challenges facing independent musicians today, as well as how their unique studio model is filling the gaps." },
+                    ]
+                },
+                {
+                    title: "The studio as a space for professional development",
+                    sectionImg: storiesDetailPage41Img3,
+                    contentData: [
+                        { content: "Ten87 differs from the fully equipped studio-for-hire model that musicians have long been accustomed to. While these spaces serve their role still—indeed Ten87 recently opened their own day hire studio of this kind—changes to the music industry mean a growing siloization of artists and the need for different kinds of longer term spaces for musicians. “The thing that we've always been really keen about doing and promoting is keeping things as flexible as possible in terms of the residency lengths. So people can stay with us for a couple of months, or they can stay with us for five years,” comments Burn." },
+                        { content: "“A really nice product of that is the fact that because people have been here for so long, Prentis adds. The place really has that strong community feel, where everybody knows each other. There's so much collaboration going on all the time. There are other studios in London that provide similar services, but aren’t necessarily in a nutshell a community. That's what's unique about this exactly.”" },
+                    ]
+                },
+                {
+                    title: "The changing role of labels and new responsibilities for independent artists",
+                    sectionImg: storiesDetailPage41Img4,
+                    contentData: [
+                        { content: "While the increased ability to create music independently certainly has its advantages, there are nonetheless crucial gaps for artist development nowadays that have become exposed. “The independent side of the industry has really boomed over the last few years,” Burn comments. “The majors and larger independent labels were, once upon a time, focused on developing artists. That is increasingly being left up to artists themselves” he says, continuing. “There's sort of a need for people to be essentially a jack of all trades. At the start of your career have to be your own manager, publicist.” In this environment, skill sharing becomes essential. “We have a real range of artists, some people that are making the first steps into the industry, and sharing a studio with a group of other people, Burn notes. Then we've got people that have been doing it for ten, fifteen, twenty-plus years. So immediately, just with sort of neighborly contact, people are sharing their experiences, advice, and access to each other's networks.”" },
+                        { content: "Furthermore, Ten87 provides proactive support for their clients. “We have a page on our website that posts Funding opportunities for Musicians, with different avenues for helping artists who are independent, adds Prentis. We have discussions with different organizations that offer that too, and make those as clear as possible to our residents.”" },
+                    ]
+                },
+                {
+                    title: "The importance of your network",
+                    sectionImg: storiesDetailPage41Img5,
+                    contentData: [
+                        { content: "Essential to any independent musician’s professional footing is their ability to build a network, and this is something that is a growing challenge as musicians are, more and more, expected to go it alone. “A big part of my role here is to do stuff that creates extra value for our community,” Prentis says. “We're not just landlords renting out spaces, we're also really invested in people who are part of the community and wanting to help them in any way we can, do things that encourage collaboration, and events are a big part of that.” He continues, “Recently we collaborated with local businesses in the area to put on a big festival over the weekend. We had a panel talk, with different representatives from independent labels who came forward and spoke, some of whom have been artists previously, and made the transition from artists to label owners. That was something that we offered free to our community and a wide neighborhood.” Prentis continues, “We also do smaller events, like Work in Progress, where we get all of our community members together to just listen back on stuff they're working on. It's an opportunity for them to share and get feedback. There’s lots of things like that going on throughout the year.”" },
+                    ]
+                },
+            ],
+        }
     },
     {
         bgImg: sectionImg42,
         storyType: "qrates biz",
-        title: "From URL to IRL: Five artists and labels that",
+        title: "From URL to IRL: Five artists and labels that grew with vinyl",
         slugs: 'story-detail-42',
-        content: "grew with vinyl It’s one thing to command a sizable base of fans and admirers who engage",
+        content: "It’s one thing to command a sizable base of fans and admirers who engage with your music online. It’s another to be able to monetize it so you can keep doing what you’re doing. ",
+        pageTitle: "Discover",
+        storiesDetailsData: {
+            topSectionData: {
+                contentData: [
+                    { content: "One of the greatest strengths of the digital era is also its greatest weakness—where media accessibility and ease of distribution also makes consumers less likely to pay for it." },
+                    { content: "Producing vinyl is one way to overcome this pitfall, providing listeners with an alternative format for appreciating their favourite music by being given the opportunity to own a part of an artist’s hard work in the collectible form of an analogue object that looks as good as it sounds." },
+                    { content: "By providing an effective platform for first-time vinyl record producers with little idea of the scale of a project, Qrates has seen so many of its artists become astonished by the level of interest from the fans." },
+                    { content: "These include popular hip-hop artist Sol’s long-overdue pressing of his seminal Yours Truly album—first released in 2012—and Mason Lieberman’s Cowboy Bebop theme song charity arrangement, which out-sold its initial target of one hundred seven-inch single releases, 28-times over. Not including Pomplamoose & John Schroeder En Français EP of French covers, here’s a list of Qrates’ top five projects ever sold for context." },
+                ],
+            },
+            middleSectionData: [
+                {
+                    title: "Vulf Records",
+                    sectionImg: storiesDetailPage42Img2,
+                    contentData: [
+                        { content: "Far and away the most successful artist on the Qrates vinyl catalogue, Vulfpeck manages the delicate balance between enjoying some major fame, while remaining independent through it all via their Vulf Records label. The Michigan-founded funk group had already built a considerable fan-base through their YouTube channel before joining Qrates in 2017. While Vulfpeck make the kind of catchy and danceable, soul, jazz and RnB grooves that has listeners hooked, their most famous album features no music at all. 2014’s Sleepify was an ingenious exercise in undermining Spotify’s royalty payments scheme by asking fans to play its 10 audio-free tracks in their sleep, while the band collected enough money to carry out an entire tour with free-admission. As one of 17 Vulf Records releases on Qrates to date, Sleepofy was made available to pre-order for one day only, generating over 1,000 orders for this silent piece of “modern art”." },
+                    ]
+                },
+                {
+                    title: "Chillhop Music",
+                    sectionImg: storiesDetailPage42Img3,
+                    contentData: [
+                        { content: "Chillhop Music emerged with a growing online trend for listening to lo-fi hip hop via 24-hour radio streams. The Netherlands-based label run by Bas Van Leeuwen came up when YouTube enabled hosts to livestream in 2013, in which their brand of downtempo and jazzy hip hop would come to be known in the industry as “lean back listening” for any relaxed mood and activity. In the four years since releasing their very first vinyl pressing of tunes by Leiden-based producer Deeb in 2016, the Chillhop has run over 30 campaigns through Qrates, including their impeccably curated and designed Essentials compilations, released for every season, four times a year." },
+                    ]
+                },
+                {
+                    title: "Cookin’ Soul",
+                    sectionImg: storiesDetailPage42Img4,
+                    contentData: [
+                        { content: "Famous on the global sampling circuit, Spanish DJ and Grammy Award-winning Cookin’ Soul has released over 40 mixtapes since 2005, with credits across 250 albums, and a reputation for producing infamous remixes, mixtapes and mashups that precedes him. Often collaborating online and via email, producer  Big Size has worked with the likes of The Game, Nicki Minaj, Wiz Khalifa and Mac Miller, while developing his signature smooth and soulful, sample-based hip hop that owes a lot to the influence of artists like MF DOOM and J DILLA—both of whom feature on Qrates vinyl releases. These include the 4 DILLA VOL. 1-5 tribute album, and DOOM XMAS, featuring emceeing from the British alternative hip hop artist himself." },
+                    ]
+                },
+                {
+                    title: "Austin Weber",
+                    sectionImg: storiesDetailPage42Img5,
+                    contentData: [
+                        { content: "A mix of lo-fi dream pop and indie synths, Austin Weber is a mysterious YouTube star with a bug following but next to no biographical information. That’s except for the brief backstory for this heart-breaking 7-inch single, featuring a cover of ABBA’s 1975 single “Mama Mia”, sung by Weber and recorded from the middle of the Kamo River in Kyoto. The slightly altered lyrics of the song are sung through a microphone and headphones, while passersby look on in bewilderment. Weber sings while his father films—a last minute replacement to accompany him on his first trip to Japan after his girlfriend dumped him. The poignant and vulnerable take on the europop track was first released on Bandcamp in 2018, and outsold itself by three times when released with an instrumental B-side, brand new artwork and orange vinyl late last year." },
+                    ]
+                },
+                {
+                    title: "Kevin Penkin",
+                    sectionImg: storiesDetailPage42Img6,
+                    contentData: [
+                        { content: "The power of the internet meant that Kevin Penkin could make a name for himself as a much sought-after producer from his home in Perth, Western Australia. He collaborated with eminent Japanese musician and composer Nobuo Uematsu on video game Jyuzaengi: Engetsu Sangokuden at the tender age of 19. For a time based in London, while attending Royal College of Music, the Melbourne-based composer is by now best known for his 2017 soundtrack to Akihito Tsukushi’s Made in Abyss Manga series, which has had two pressings of over 2,000 vinyl pre-orders through Qrates. Penkin currently has a live campaign for the OST of Korean web manhwa, Tower of God, which features additional composition from regular collaborator Mason Lieberman, whose “The Real Folk Blues” limited edition charity 7-inch release, in turn, features Penkin on flute." },
+                    ]
+                },
+            ],
+        }
     },
 ]
 
