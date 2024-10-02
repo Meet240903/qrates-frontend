@@ -1,0 +1,138 @@
+.contact-page-bottom-section-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-page-bottom-section-title {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.contact-page-bottom-section-title h5 {
+  font-size: 28px;
+}
+
+.contact-page-bottom-section-title p {
+  margin: 3rem 0;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.contact-page-bottom-section-form {
+  margin-bottom: 2rem;
+}
+
+.contact-page-bottom-section-form-group {
+  margin-bottom: 3rem;
+}
+
+.contact-page-bottom-section-form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-page-bottom-section-form-group input,
+.contact-page-bottom-section-form-group select,
+.contact-page-bottom-section-form-group textarea {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid #000;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.contact-page-bottom-section-form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.contact-page-bottom-section-file-upload {
+  margin: 15px 0;
+  position: relative;
+  text-align: center;
+  border: 2px dashed #000;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.contact-page-bottom-section-file-upload-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-page-bottom-section-upload-text {
+  font-size: 14px;
+}
+
+.contact-page-bottom-section-recaptcha-box {
+  display: flex;
+  align-items: center;
+}
+
+.contact-page-bottom-section-recaptcha-box input {
+  margin-right: 10px;
+  width: fit-content;
+}
+
+.contact-page-bottom-section-submit-section {
+  margin-top: 20px;
+}
+
+.contact-page-bottom-section-processing-time {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+}
+
+.contact-page-bottom-section-processing-time a {
+  color: #00b289;
+  text-decoration: underline;
+}
+
+.contact-page-bottom-section-submit-button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 20%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.contact-page-bottom-section-img {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-page-bottom-section-img img {
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .contact-page-bottom-section-container {
+    padding: 1rem;
+  }
+  .contact-page-bottom-section-title h5 {
+    font-size: 22px;
+  }
+
+  .contact-page-bottom-section-title p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 2rem 0;
+  }
+  .contact-page-bottom-section-submit-button {
+    width: 100%;
+  }
+  .contact-page-bottom-section-processing-time {
+    font-size: 14px;
+  }
+}

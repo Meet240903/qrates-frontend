@@ -1,0 +1,18 @@
+.career-page-bottom-section-container {
+  padding: 10rem;
+  text-align: center;
+}
+
+.career-page-bottom-section-container p {
+  font-size: 20px;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+@media (max-width:768pc) {
+    .career-page-bottom-section-container{
+        padding: 5rem 1rem;
+    }
+}
