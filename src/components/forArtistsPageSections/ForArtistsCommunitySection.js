@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../assets/css/forArtistsPageSectionCSS/forArtistsCommunitySection.css'
+import { Link } from 'react-router-dom'
 
 const ForArtistsCommunitySection = () => {
     return (
@@ -13,7 +14,9 @@ const ForArtistsCommunitySection = () => {
                     <p className='for-artists-page-community-section-inner-content'>
                         We're building a home for the next generation vinyl lovers and cassette junkies. Get in front of fans, connect with artists, labels and stores.
                     </p>
-                    <button>read more stories</button>
+                    <Link to='/stories' target='_top'>
+                        <button>read more stories</button>
+                    </Link>
                 </div>
             </div>
         </>

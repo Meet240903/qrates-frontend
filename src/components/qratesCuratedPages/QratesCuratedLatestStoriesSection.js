@@ -49,21 +49,23 @@ const QratesCuratedLatestStoriesSection = () => {
 
             <div className='qrates-curated-page-latest-stories-section-content' ref={storiesContainerRef}>
                 {selectedStoriesData.map((data, index) => (
-                    <div
-                        className='qrates-curated-page-latest-stories-section-content-boxs'
-                        key={index}
-                        style={{
-                            backgroundImage: data?.bgImg ? `url(${data.bgImg})` : 'none'
-                        }}
-                    >
-                        <div className='qrates-curated-page-latest-stories-section-content-boxs-title'>
-                            <span>{data?.storyType}</span>
+                    <Link to={`/stories-details-page/${data?.slugs}`} target='_top' style={{ textDecoration: 'none' }}>
+                        <div
+                            className='qrates-curated-page-latest-stories-section-content-boxs'
+                            key={index}
+                            style={{
+                                backgroundImage: data?.bgImg ? `url(${data.bgImg})` : 'none'
+                            }}
+                        >
+                            <div className='qrates-curated-page-latest-stories-section-content-boxs-title'>
+                                <span>{data?.storyType}</span>
+                            </div>
+                            <div className='qrates-curated-page-latest-stories-section-content-boxs-body'>
+                                <p>{truncateText(data?.title, 30)}</p> {/* Truncate title to 30 characters */}
+                                <h3>{truncateText(data?.content, 50)}</h3> {/* Truncate content to 50 characters */}
+                            </div>
                         </div>
-                        <div className='qrates-curated-page-latest-stories-section-content-boxs-body'>
-                            <p>{truncateText(data?.title, 30)}</p> {/* Truncate title to 30 characters */}
-                            <h3>{truncateText(data?.content, 50)}</h3> {/* Truncate content to 50 characters */}
-                        </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </div>

@@ -47,15 +47,17 @@ const QratesCuratedLatestArticles = () => {
                     {
                         selectedArticlesData?.map((data, index) => (
                             <div className='qrates-curated-page-latest-articles-section-content-boxs' key={index}>
-                                <div className='qrates-curated-page-latest-articles-section-content-boxs-img'
-                                    style={{
-                                        backgroundImage: `url(${data.sectionImg})`
-                                    }}
-                                >
-                                    <div className='qrates-curated-page-latest-articles-section-content-box-title'>
-                                        <span>{data?.articleType}</span>
+                                <Link to={`/articles-details-page/${data?.slugs}`} target='_top' style={{ textDecoration: 'none' }}>
+                                    <div className='qrates-curated-page-latest-articles-section-content-boxs-img'
+                                        style={{
+                                            backgroundImage: `url(${data.sectionImg})`
+                                        }}
+                                    >
+                                        <div className='qrates-curated-page-latest-articles-section-content-box-title'>
+                                            <span>{data?.articleType}</span>
+                                        </div>
                                     </div>
-                                </div>
+                                </Link>
                                 <div className='qrates-curated-page-latest-articles-section-content-boxs-body'>
                                     <h2>{truncateText(data?.articleTitle, 30)}</h2>
                                     <p>{truncateText(data?.articleContent, 120)}</p>

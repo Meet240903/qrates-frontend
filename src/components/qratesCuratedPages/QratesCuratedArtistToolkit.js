@@ -25,7 +25,7 @@ const QratesCuratedArtistToolkit = () => {
                             <h2>{selectedArticleData?.articleTitle}</h2>
                             <p>{selectedArticleData?.articleContent}</p>
                         </div>
-                        <Link to={`${selectedArticleData?.slugs}`}>READ FULL STORY <FontAwesomeIcon icon={faArrowRight} /></Link>
+                        <Link to={`/articles-details-page/${selectedArticleData?.slugs}`} target='_top'>READ FULL STORY <FontAwesomeIcon icon={faArrowRight} /></Link>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import sectionImg1 from '../../assets/images/forArtistsPageImgs/startNewProjectSectionImgs/sectionImg1.avif'
 import sectionImg2 from '../../assets/images/forArtistsPageImgs/startNewProjectSectionImgs/sectionImg2.avif'
+import { Link } from 'react-router-dom'
 
 const ForArtistsStartNewProjectSection = () => {
     return (
@@ -21,7 +22,9 @@ const ForArtistsStartNewProjectSection = () => {
                         </div>
                         <h1>Take you and your works to next level.</h1>
                         <p className='for-artists-page-start-new-project-section-left-inner-content'>We have a lot of informations and tips about music production, physical format and music business for you.</p>
-                        <button>learn more</button>
+                        <Link to='/articles' target='_top'>
+                            <button>learn more</button>
+                        </Link>
                     </div>
                     <div className='col-md-6 for-artists-page-start-new-project-section-right-content'>
                         <img src={sectionImg2} className='img-fluid' alt='section-img' />
@@ -30,7 +33,9 @@ const ForArtistsStartNewProjectSection = () => {
                         </div>
                         <h1>Here to help, whenever you need it.</h1>
                         <p className='for-artists-page-start-new-project-section-right-inner-content'>Whether you’re an artist in the middle of product, or a fan with questions about your order; our team is here to help.</p>
-                        <button>contact us</button>
+                        <Link to='/contact' target='_top'>
+                            <button>contact us</button>
+                        </Link>
                     </div>
                 </div>
             </div>
