@@ -1,0 +1,92 @@
+.articles-details-page-bottom-section-container {
+  max-width: 1300px;
+  margin: 3rem auto;
+}
+
+.articles-details-page-bottom-section-img-body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 2px solid #000;
+  height: 700px;
+}
+
+.articles-details-page-bottom-section-content {
+  margin: 4rem 0;
+  padding: 0 !important;
+}
+
+.articles-details-page-bottom-section-right-content {
+  padding: 0 !important;
+}
+
+.articles-details-page-bottom-section-right-content-body {
+  margin: 2rem 0;
+}
+
+.articles-details-page-bottom-section-right-content-body h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.articles-details-page-bottom-section-right-content-body p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.articles-details-page-bottom-section-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 3rem auto;
+  border-top: 2px solid #000;
+  padding: 2rem 0;
+}
+
+.articles-details-page-bottom-section-footer p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.articles-details-page-bottom-section-footer button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .articles-details-page-bottom-section-container {
+    padding: 0 1rem;
+  }
+  .articles-details-page-bottom-section-img-body {
+    height: 300px;
+  }
+  .articles-details-page-bottom-section-content {
+    margin: 0;
+  }
+  .articles-details-page-bottom-section-right-content-body h4 {
+    font-size: 20px;
+  }
+  .articles-details-page-bottom-section-right-content-body p {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .articles-details-page-bottom-section-footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: 3rem 1rem;
+  }
+  .articles-details-page-bottom-section-footer button {
+    margin-top: 2rem;
+  }
+}

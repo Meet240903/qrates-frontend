@@ -18,6 +18,7 @@ import AboutPage from "./components/AboutPage";
 import CareersPage from "./components/CareersPage";
 import PartnersPage from "./components/PartnersPage";
 import ContactPage from "./components/ContactPage";
+import ArticlesDetailsPage from "./components/ArticlesDetailsPage";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route exact path='/sign-up' element={<SignUp />} />
           <Route exact path='/records-project-details/:slugs' element={<RecordsProjectDetails />} />
           <Route exact path='/stories-details-page/:slugs' element={<StoriesDetailsPage />} />
+          <Route exact path='/articles-details-page/:slugs' element={<ArticlesDetailsPage />} />
           <Route exact path='/about-us' element={<AboutPage />} />
           <Route exact path='/careers' element={<CareersPage />} />
           <Route exact path='/partners' element={<PartnersPage />} />
